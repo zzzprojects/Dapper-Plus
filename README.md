@@ -1,5 +1,4 @@
 [Introduction][dapper_introduction]
-
 **Dapper Plus -  Actions**
 - [Introduction][dapper_actions_introduction]
 - Bulk Actions
@@ -18,7 +17,6 @@
    - [Then Bulk Delete][dapper_then_bulk_delete]
    - [Then Bulk Merge][dapper_then_bulk_merge]
 - [Include][dapper_include]
-
 **Dapper Plus - Mapper**
 - [Introduction][dapper_mapper_introduction]
 - [Map][dapper_mapper_map]
@@ -28,7 +26,6 @@
    - [SqlServer][dapper_mapper_sqlserver]
    - [TemporaryTable][dapper_mapper_temporarytable]
    - [Transient Error][dapper_mapper_transient_error]
-
 **Dapper Plus - Manager**
 - [Entity][dapper_manager_entity]
 - [MapperFactory][dapper_manager_mapperfactory]
