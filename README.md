@@ -25,8 +25,8 @@
 - Options
    - [Action][dapper_mapper_action]
    - [Batch][dapper_mapper_batch]
-   - [SqlServer][dapper_mapper_sqlserver]
-   - [TemporaryTable][dapper_mapper_temporarytable]
+   - [SQL Server][dapper_mapper_sql_server]
+   - [Temporary Table][dapper_mapper_temporary_table]
    - [Transient Error][dapper_mapper_transient_error]
  
 **Dapper Plus - Manager**
@@ -61,11 +61,11 @@
 
 [dapper_mapper_action]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-action
 [dapper_mapper_batch]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-batch
-[dapper_mapper_sqlserver]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-sqlserver
-[dapper_mapper_temporarytable]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-temporarytable
+[dapper_mapper_sql_server]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-sql-server
+[dapper_mapper_temporarytable]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-temporary-table
 [dapper_mapper_transient_error]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-transient-error
 
 [dapper_manager_entity]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-manager-entity
-[dapper_manager_mapperfactory]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-manager-default-config
+[dapper_manager_mapperfactory]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-manager-mapper-factory
 
 
