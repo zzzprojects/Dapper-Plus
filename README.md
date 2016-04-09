@@ -17,7 +17,7 @@
    - [Then Bulk Update][dapper_then_bulk_update]
    - [Then Bulk Delete][dapper_then_bulk_delete]
    - [Then Bulk Merge][dapper_then_bulk_merge]
-- [Include][dapper_include]
+- [Include Actions][dapper_include_actions]
 
 **Dapper Plus - Mapper**
 - [Introduction][dapper_mapper_introduction]
@@ -54,7 +54,7 @@
 [dapper_then_bulk_delete]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-then-bulk-delete
 [dapper_then_bulk_merge]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-then-bulk-merge
 
-[dapper_include]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-include
+[dapper_include_actions]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-include-actions
 
 [dapper_mapper_introduction]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-introduction
 [dapper_mapper_map]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-map
