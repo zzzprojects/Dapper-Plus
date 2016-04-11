@@ -33,6 +33,8 @@
 - [Entity][dapper_manager_entity]
 - [MapperFactory][dapper_manager_mapperfactory]
 
+- [PRO License][dapper_pro_license]
+
 
    
 [dapper_introduction]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-introduction
@@ -68,4 +70,5 @@
 [dapper_manager_entity]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-manager-entity
 [dapper_manager_mapperfactory]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-manager-mapper-factory
 
+[dapper_pro_license]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-pro-license
 
