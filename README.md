@@ -33,7 +33,7 @@
 - [Entity][dapper_manager_entity]
 - [MapperFactory][dapper_manager_mapperfactory]
 
-- [PRO License][dapper_pro_license]
+[PRO License][dapper_pro_license]
 
 
    
