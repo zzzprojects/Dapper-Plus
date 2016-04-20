@@ -98,21 +98,20 @@ Contact our outstanding customer support for any request. We usually answer with
 ## FREE vs PRO
 _PRO Version unlocked for the current month_
 
-Features                    | [PRO Version](http://bulk-operations.net/#pro)
+Features                    | [PRO Version](http://dapper-plus.net/#pro)
 --------                    | :-------------: |
 Bulk Insert                 | Yes
 Bulk Update                 | Yes
 Bulk Delete                 | Yes
 Bulk Merge                  | Yes
-Bulk SaveChanges            | Yes
-Bulk Synchornize            | Yes
-DeleteFromQuery             | Yes
-UpdateFromQuery             | Yes
+Bulk Action Async           | Yes
+Bulk Also Action            | Yes
+Bulk Then Action            | Yes
 Commercial License          | Yes
 Royalty-Free                | Yes
 Support & Upgrades (1 year) | Yes
 
-Learn more about the **[PRO Version](http://bulk-operations.net/#pro)**
+Learn more about the **[PRO Version](http://dapper-plus.net/#pro)**
 
 ## Contribute
 The best way to contribute is by **spreading the word** about the library:
