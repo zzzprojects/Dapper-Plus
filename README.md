@@ -1,3 +1,21 @@
+Like [Dapper](https://github.com/StackExchange/dapper-dot-net), 
+
+**Dapper Plus** is a NuGet library _(Available Soon)_ that you can add to your project that will extend your `IDbConnection` interface with high efficient Bulk Actions Helpers (Insert, Update, Delete, and Merge).
+
+It can be used with or without Dapper, and it's compatible with all others Dapper packages.
+
+### Example
+```csharp
+// CONFIGURE & MAP entity
+DapperPlusManager.Entity<Order>().Table("Orders").Identity(x => x.ID);
+
+// CHAIN & SAVE entity
+connection.BulkInsert(orders)
+          .AlsoInsert(order => order.Items);
+          .Include(order => order.ThenMerge(order => order.Invoice)
+                                 .AsloMerge(invoice => invoice.Items))
+          .AlsoMerge(order => order.ShippingAddress);	
+```
 
 ## Download
 <a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/dapper-plus-v.svg" alt="download" /></a>
