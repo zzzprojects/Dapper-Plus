@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13E580C8-6E58-4CA0-933B-4ACB1E8D0593}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Z.Dapper.Plus</RootNamespace>
+    <AssemblyName>Z.Dapper.Plus</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET45</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET45</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Z.BulkOperations, Version=2.9.25.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.BulkOperations.2.9.25\lib\net45\Z.BulkOperations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DapperPlusAction\Method\ApplyConfig.cs" />
+    <Compile Include="DapperPlusAction\Method\Execute.cs" />
+    <Compile Include="DapperPlusAction\Method\AutoMap.cs" />
+    <Compile Include="DapperPlusAction\Method\Map.cs" />
+    <Compile Include="DapperPlusColumnMapping\DapperPlusColumnMapping.cs" />
+    <Compile Include="DapperPlusEntityMapper\Method\Map.cs" />
+    <Compile Include="DapperPlusEntityMapper`\Method\Config.cs" />
+    <Compile Include="DapperPlusEntityMapper`\Field\Map.cs" />
+    <Compile Include="DapperPlusExpressionMapper\DapperPlusExpressionMapper.cs" />
+    <Compile Include="Extensions\IDbConnection\BulkAction\BulkActionAsync.cs" />
+    <Compile Include="IDapperPlusActionSet.cs" />
+    <Compile Include="BaseDapperPlusActionSet.cs" />
+    <Compile Include="DapperPlusAction\DapperPlusAction.cs" />
+    <Compile Include="DapperPlusActionKind.cs" />
+    <Compile Include="Extensions\IDbConnection\BulkAction\BulkDelete.cs" />
+    <Compile Include="Extensions\IDbConnection\BulkAction\BulkInsert.cs" />
+    <Compile Include="Extensions\IDbConnection\BulkAction\BulkMerge.cs" />
+    <Compile Include="Extensions\IDbConnection\BulkAction\BulkUpdate.cs" />
+    <Compile Include="DapperPlusActionSet\AlsoBulkAction\AlsoBulkDelete.cs" />
+    <Compile Include="DapperPlusActionSet\AlsoBulkAction\AlsoBulkInsert.cs" />
+    <Compile Include="DapperPlusActionSet\AlsoBulkAction\AlsoBulkMerge.cs" />
+    <Compile Include="DapperPlusActionSet\AlsoBulkAction\AlsoBulkUpdate.cs" />
+    <Compile Include="DapperPlusActionSet\BulkAction\BulkDelete.cs" />
+    <Compile Include="DapperPlusActionSet\BulkAction\BulkInsert.cs" />
+    <Compile Include="DapperPlusActionSet\BulkAction\BulkMerge.cs" />
+    <Compile Include="DapperPlusActionSet\BulkAction\BulkUpdate.cs" />
+    <Compile Include="DapperPlusActionSet\AddAction\AddAction.cs" />
+    <Compile Include="DapperPlusActionSet\Constructor\Constructor.cs" />
+    <Compile Include="DapperPlusActionSet\DapperPlusActionSet.cs" />
+    <Compile Include="DapperPlusActionSet\AlsoBulkAction\Extensions\AlsoBulkDelete.cs" />
+    <Compile Include="DapperPlusActionSet\AlsoBulkAction\Extensions\AlsoBulkInsert.cs" />
+    <Compile Include="DapperPlusActionSet\AlsoBulkAction\Extensions\AlsoBulkMerge.cs" />
+    <Compile Include="DapperPlusActionSet\AlsoBulkAction\Extensions\AlsoBulkUpdate.cs" />
+    <Compile Include="DapperPlusActionSet\ThenBulkAction\Extensions\ThenBulkDelete.cs" />
+    <Compile Include="DapperPlusActionSet\ThenBulkAction\Extensions\ThenBulkInsert.cs" />
+    <Compile Include="DapperPlusActionSet\ThenBulkAction\Extensions\ThenBulkMerge.cs" />
+    <Compile Include="DapperPlusActionSet\ThenBulkAction\Extensions\ThenBulkUpdate.cs" />
+    <Compile Include="DapperPlusActionSet\Include\Include.cs" />
+    <Compile Include="DapperPlusActionSet\ThenBulkAction\ThenBulkDelete.cs" />
+    <Compile Include="DapperPlusActionSet\ThenBulkAction\ThenBulkInsert.cs" />
+    <Compile Include="DapperPlusActionSet\ThenBulkAction\ThenBulkMerge.cs" />
+    <Compile Include="DapperPlusActionSet\ThenBulkAction\ThenBulkUpdate.cs" />
+    <Compile Include="DapperPlusEntityMapper\Method\Batch.cs" />
+    <Compile Include="DapperPlusEntityMapper\Method\Destination.cs" />
+    <Compile Include="DapperPlusEntityMapper\Method\SqlServer.cs" />
+    <Compile Include="DapperPlusEntityMapper\Method\TemporaryTable.cs" />
+    <Compile Include="DapperPlusEntityMapper\Method\Transient.cs" />
+    <Compile Include="DapperPlusEntityMapper\Field\Batch.cs" />
+    <Compile Include="DapperPlusEntityMapper\Field\Destination.cs" />
+    <Compile Include="DapperPlusEntityMapper\Field\Map.cs" />
+    <Compile Include="DapperPlusEntityMapper\Field\SqlServer.cs" />
+    <Compile Include="DapperPlusEntityMapper\Field\TemporaryTable.cs" />
+    <Compile Include="DapperPlusEntityMapper\Field\Config.cs" />
+    <Compile Include="DapperPlusEntityMapper\Field\Transient.cs" />
+    <Compile Include="DapperPlusEntityMapper`\Method\Batch.cs" />
+    <Compile Include="DapperPlusEntityMapper`\Method\Destination.cs" />
+    <Compile Include="DapperPlusEntityMapper`\Method\Map.cs" />
+    <Compile Include="DapperPlusEntityMapper`\Method\SqlServer.cs" />
+    <Compile Include="DapperPlusEntityMapper`\Method\TemporaryTable.cs" />
+    <Compile Include="DapperPlusEntityMapper`\Method\Transient.cs" />
+    <Compile Include="DapperPlusEntityMapper`\DapperPlusEntityMapper`.cs" />
+    <Compile Include="DapperPlusEntityMapper\DapperPlusEntityMapper.cs" />
+    <Compile Include="DapperPlusManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Internal\Accessor\LambdaExpression.GetPropertyOrFieldAccessors.cs" />
+    <Compile Include="_Internal\Accessor\PropertyOrFieldAccessor.cs" />
+    <Compile Include="_Internal\Accessor\ExpressionExtensions.cs" />
+    <Compile Include="_Internal\Accessor\ExpressionExtensions.PropertyOrField.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mapper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
