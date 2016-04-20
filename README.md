@@ -88,3 +88,62 @@ Stay updated with latest changes
 
 [dapper_plus_pro_license]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-pro-license
 
+## Support
+Contact our outstanding customer support for any request. We usually answer within the next business day, hour, or minutes!
+
+- info@zzzprojects.com
+- [Documentation](https://github.com/zzzprojects/Bulk-Operations/wiki)
+- [Issues / Questions](https://github.com/zzzprojects/Bulk-Operations/issues)
+
+## FREE vs PRO
+_PRO Version unlocked for the current month_
+
+Features                    | [PRO Version](http://bulk-operations.net/#pro)
+--------                    | :-------------: |
+Bulk Insert                 | Yes
+Bulk Update                 | Yes
+Bulk Delete                 | Yes
+Bulk Merge                  | Yes
+Bulk SaveChanges            | Yes
+Bulk Synchornize            | Yes
+DeleteFromQuery             | Yes
+UpdateFromQuery             | Yes
+Commercial License          | Yes
+Royalty-Free                | Yes
+Support & Upgrades (1 year) | Yes
+
+Learn more about the **[PRO Version](http://bulk-operations.net/#pro)**
+
+## Contribute
+The best way to contribute is by **spreading the word** about the library:
+
+ - Blog it
+ - Comment it
+ - Fork it
+ - Star it
+ - Share it
+ 
+A **HUGE THANKS** for your help.
+
+## More Projects
+
+**Entity Framework**
+- [EntityFramework Extensions](http://entityframework-extensions.net/)
+- [EntityFramework Plus](http://entityframework-plus.net)
+
+**Bulk Operations**
+- [Bulk Operations](http://bulk-operations.net/)
+- [Dapper Plus](http://dapper-plus.net/)
+
+**Expression Evaluator**
+- [Eval-SQL.NET](http://eval-sql.net/)
+- [Eval-Expression.NET](http://eval-expression.net/)
+
+**Others**
+- [Extension Methods Library](https://github.com/zzzprojects/Z.ExtensionMethods/)
+- [LINQ Async](https://github.com/zzzprojects/Linq-AsyncExtensions)
+
+**Need more info?** info@zzzprojects.com
+
+Contact our outstanding customer support for any request. We usually answer within the next business day, hour, or minutes!
+
