@@ -32,6 +32,62 @@ Stay updated with latest changes
 <a href="https://twitter.com/zzzprojects" target="_blank"><img src="http://www.zzzprojects.com/images/twitter_follow.png" alt="Twitter Follow" height="24" /></a>
 <a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="http://www.zzzprojects.com/images/facebook_like.png" alt="Facebook Like" height="24" /></a>
 
+```
+## Mapper
+Dapper Plus Mapper allow to map the conceptual model (Entity) with the storage model (Database) and configure options to perform Bulk Actions.
+```csharp
+DapperPlusManager.Entity<Order>().Table("Orders")
+                                 .Identity(x => x.ID)
+                                 .BatchSize(200);
+```
+
+## Bulk Actions
+**Bulk Actions** allow to perform a bulk insert, update, delete or merge and include related child items.
+```csharp
+connection.BulkInsert(orders, order => order.Items)
+          .BulkInsert(invoices, invoice => invoice.Items)
+          .BulkMerge(shippingAddresses);
+```
+### Also Bulk Actions
+**Also Bulk Actions** allow to perform bulk action with a lambda expression using entities from the last Bulk[Action] or ThenBulk[Action] used.
+
+```csharp
+connection.BulkInsert(orders)
+          .AlsoInsert(order => order.Items)
+          .AlsoInsert(order => order.Invoice)
+          .AlsoInsert(order => order.Invoice.Items);
+```
+### Then Bulk Actions
+**Then Bulk Actions** is similar to Also Bulk Actions but modify entities used for the next bulk action using a lambda expression.
+
+```csharp
+connection.BulkInsert(orders)
+          .AlsoInsert(order => order.Items)
+          .ThenInsert(order => order.Invoice)
+          .ThenInsert(invoice => invoice.Items);
+```
+
+### Include Actions
+The Dapper Plus Include method allow resolving issues with multiple "ThenBulk[Action]" method.
+
+```csharp
+connection.BulkInsert(orders)
+          .Include(x => x.ThenInsert(order => order.Items)
+                         .ThenInsert(orderItem => orderItem.Metas))
+          .Include(x => x.ThenInsert(order => order.Invoice)
+                         .ThenInsert(Invoice => invoice.Items));   	
+```
+## DB Provider Supported
+All major database provider are supported or under development.
+- SQL Server 2008+
+- SQL Azure
+- SQL Compact
+- SQLite
+- MySQL
+- PostgreSQL _(Under Development)_
+- Oracle _(Under Development)_
+
+## Wiki
 [Introduction][dapper_plus_introduction]
 
 **Dapper Plus -  Actions**
