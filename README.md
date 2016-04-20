@@ -1,4 +1,18 @@
-**_Library Under Construction (Available at the end of April)_*
+
+## Download
+<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/dapper-plus-v.svg" alt="download" /></a>
+<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/dapper-plus-d.svg" alt="" /></a>
+
+```
+PM> Install-Package Z.Dapper.Plus
+```
+
+_* PRO Version unlocked for the current month_
+
+Stay updated with latest changes
+
+<a href="https://twitter.com/zzzprojects" target="_blank"><img src="http://www.zzzprojects.com/images/twitter_follow.png" alt="Twitter Follow" height="24" /></a>
+<a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="http://www.zzzprojects.com/images/facebook_like.png" alt="Facebook Like" height="24" /></a>
 
 [Introduction][dapper_plus_introduction]
 
