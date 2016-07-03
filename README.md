@@ -18,8 +18,8 @@ connection.BulkInsert(orders)
 ```
 
 ## Download
-<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/dapper-plus-v.svg" alt="download" /></a>
-<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/dapper-plus-d.svg" alt="" /></a>
+<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/dapper-plus-v.svg" alt="download" /></a>
+<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/dapper-plus-d.svg" alt="" /></a>
 
 ```
 PM> Install-Package Z.Dapper.Plus
