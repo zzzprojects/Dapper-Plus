@@ -121,8 +121,8 @@ All major database provider are supported or under development.
 - SQL Compact
 - SQLite
 - MySQL
-- PostgreSQL _(Under Development)_
-- Oracle _(Under Development)_
+- PostgreSQL
+- Oracle
 
 [dapper_plus_introduction]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-introduction
 
