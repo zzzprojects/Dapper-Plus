@@ -7,6 +7,7 @@ namespace Z.Dapper.Plus
     /// <summary>Manager for dapper plus.</summary>
     public class DapperPlusManager
     {
+        public static bool ThrowErrorIfNotMapped { get; set; }
         /// <summary>The mapper cache.</summary>
         private static ConcurrentDictionary<string, DapperPlusEntityMapper> _mapperCache;
 
@@ -65,7 +66,20 @@ namespace Z.Dapper.Plus
 
         public static string GetFullMapperKey(Type type, string mapperKey)
         {
-            var fullKey = mapperKey ?? "zzz_null" + ";" + type.FullName;
+            var fullKey = mapperKey ?? "zzz_null" + ";";
+
+            if (type.FullName.StartsWith("System.Data.Entity.DynamicProxies"))
+            {
+                // Oops! Entity Framework Proxy Type
+                var name = type.FullName.Remove(0, "System.Data.Entity.DynamicProxies.".Length).Split('_')[0];
+                fullKey = "zzz_proxy;" + fullKey;
+                fullKey += name;
+            }
+            else
+            {
+                fullKey += type.FullName;
+            }
+            
             return fullKey;
         }
     }

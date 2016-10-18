@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Linq;
+using System.Text;
 using Z.BulkOperations;
 
 namespace Z.Dapper.Plus
@@ -106,11 +107,69 @@ namespace Z.Dapper.Plus
 
             if (!DapperPlusManager.MapperCache.TryGetValue(mapperKey, out config))
             {
-                var elementType = DataSource.GetType().GetElementType();
-                var constructor = typeof (DapperPlusEntityMapper<>).MakeGenericType(elementType).GetConstructor(new Type[0]);
-                config = (DapperPlusEntityMapper) constructor.Invoke(new object[0]);
+                // CHECK for Entity Framework Proxy Type
+                if (mapperKey.StartsWith("zzz_proxy;"))
+                {
+                    var mapperProxy = new List<DapperPlusEntityMapper>();
+                    // Try to find if one mapping could correspond
+                    foreach (var keyValue in DapperPlusManager.MapperCache)
+                    {
+                        var key = keyValue.Key;
+                        var prefix = string.IsNullOrEmpty(Key) ? "zzz_null" : Key;
+
+                        // MUST start with the same suffix
+                        if (!key.StartsWith(prefix)) continue;
+
+                        var suffix = key.Split('.').Last().Split('+').Last();
+                        var mapperSuffix = mapperKey.Split(';').Last();
+
+                        if (suffix.Length < 20)
+                        {
+                            // MUST BE Equal
+                            if (suffix != mapperSuffix) continue;
+                        }
+                        else
+                        {
+                            // MUST START with same name but only one!
+                            if (!suffix.StartsWith(mapperSuffix)) continue;
+                        }
+
+                        mapperProxy.Add(keyValue.Value);
+                    }
+
+                    if (mapperProxy.Count == 1)
+                    {
+                        config = mapperProxy[0];
+                    }
+                }
+
+                if (config == null)
+                {
+                    if (DapperPlusManager.ThrowErrorIfNotMapped)
+                    {
+                        StringBuilder sb = new StringBuilder();
+                        sb.AppendLine("Mapping Not Found!");
+                        sb.AppendLine("Current MapperKey: " + mapperKey);
+                        sb.AppendLine("Possible Mapping:");
+                        foreach (var keyValue in DapperPlusManager.MapperCache)
+                        {
+                            sb.AppendLine("   - " + keyValue.Key);
+                        }
+
+                        throw new Exception(sb.ToString());
+                    }
+                    else
+                    {
+                        var type = DataSource.GetType();
+                        var elementType = type.GetGenericArguments()[0];
+                        var constructor = typeof(DapperPlusEntityMapper<>).MakeGenericType(elementType).GetConstructor(new Type[0]);
+                        config = (DapperPlusEntityMapper)constructor.Invoke(new object[0]);
+                    }
+ 
+                }
             }
 
+            bulkOperation._isDapperPlus = true;
             bulkOperation.DataSource = DataSource;
             bulkOperation.AllowDuplicateKeys = true;
             bulkOperation.CaseSensitive = CaseSensitiveType.DestinationInsensitive;

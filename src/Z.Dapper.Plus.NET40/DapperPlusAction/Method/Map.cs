@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Z.BulkOperations;
 
 namespace Z.Dapper.Plus
@@ -16,7 +17,8 @@ namespace Z.Dapper.Plus
             var isIdentityModified = config.IsIdentityModified();
             var isIgnoreModified = config.IsIgnoreModified();
 
-            var isModified = isMapModified.HasValue && isMapModified.Value
+            var isModified = config._columnMappings == null
+                             || isMapModified.HasValue && isMapModified.Value
                              || isKeyModified.HasValue && isKeyModified.Value
                              || isOutputModified.HasValue && isOutputModified.Value
                              || isIdentityModified.HasValue && isIdentityModified.Value
@@ -57,7 +59,16 @@ namespace Z.Dapper.Plus
                 }
                 else
                 {
-                    columnMappings.Add(new DapperPlusColumnMapping {SourceName = accessor.ToString(), DestinationName = accessor.Member, Output = true});
+                    // CHECK smart mapping
+                    if (string.IsNullOrEmpty(accessor.Member) && columnMappings.Count(x => x.SourceName == accessor.ToString()) == 1)
+                    {
+                        columnMapping = columnMappings.Find(x => x.SourceName == accessor.ToString());
+                        columnMapping.Output = true;
+                    }
+                    else
+                    {
+                        columnMappings.Add(new DapperPlusColumnMapping {SourceName = accessor.ToString(), DestinationName = accessor.Member, Output = true});
+                    }
                 }
             }
 
@@ -70,7 +81,16 @@ namespace Z.Dapper.Plus
                 }
                 else
                 {
-                    columnMappings.Add(new DapperPlusColumnMapping {SourceName = accessor.ToString(), DestinationName = accessor.Member, IsPrimaryKey = true});
+                    // CHECK smart mapping
+                    if (string.IsNullOrEmpty(accessor.Member) && columnMappings.Count(x => x.SourceName == accessor.ToString()) == 1)
+                    {
+                        columnMapping = columnMappings.Find(x => x.SourceName == accessor.ToString());
+                        columnMapping.IsPrimaryKey = true;
+                    }
+                    else
+                    {
+                        columnMappings.Add(new DapperPlusColumnMapping {SourceName = accessor.ToString(), DestinationName = accessor.Member, IsPrimaryKey = true});
+                    }
                 }
             }
 
@@ -83,7 +103,16 @@ namespace Z.Dapper.Plus
                 }
                 else
                 {
-                    columnMappings.Add(new DapperPlusColumnMapping {SourceName = accessor.ToString(), DestinationName = accessor.Member, IsIdentity = true});
+                    // CHECK smart mapping
+                    if (string.IsNullOrEmpty(accessor.Member) && columnMappings.Count(x => x.SourceName == accessor.ToString()) == 1)
+                    {
+                        columnMapping = columnMappings.Find(x => x.SourceName == accessor.ToString());
+                        columnMapping.IsIdentity = true;
+                    }
+                    else
+                    {
+                        columnMappings.Add(new DapperPlusColumnMapping {SourceName = accessor.ToString(), DestinationName = accessor.Member, IsIdentity = true});
+                    }
                 }
             }
 
