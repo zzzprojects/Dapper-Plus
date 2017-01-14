@@ -116,7 +116,7 @@ connection.BulkInsert(orders)
 ```
 
 ### Transaction
-All Dapper Plus extension method are also available on the `IDbTransaction` interface
+All Dapper Plus extension methods are also available on the `IDbTransaction` interface
 ```csharp
 transaction.BulkInsert(orders)
           .Include(x => x.ThenInsert(order => order.Items)
