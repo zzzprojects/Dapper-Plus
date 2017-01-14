@@ -53,6 +53,7 @@ Stay updated with latest changes
    - [Then Bulk Delete][dapper_plus_then_bulk_delete]
    - [Then Bulk Merge][dapper_plus_then_bulk_merge]
 - [Include Actions][dapper_plus_include_actions]
+- [Transaction][dapper_plus_transaction]
 
 **Dapper Plus - Mapper**
 - [Introduction][dapper_plus_mapper_introduction]
@@ -155,6 +156,8 @@ All major database provider are supported or under development.
 [dapper_plus_then_bulk_merge]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-then-bulk-merge
 
 [dapper_plus_include_actions]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-include-actions
+
+[dapper_plus_transaction]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-transaction
 
 [dapper_plus_mapper_introduction]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-introduction
 [dapper_plus_mapper_map]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-map
