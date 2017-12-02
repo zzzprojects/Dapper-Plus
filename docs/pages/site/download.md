@@ -4,7 +4,7 @@ permalink: download
 
 <div class="page-download-nuget">
 	<div class="container">
-		<div class="row">
+		<div class="row justify-content-center">
 			<div class="col-lg-6">
 				<div class="card card-layout-z2 wow slideInLeft">
 					<div class="card-header wow slideInDown">
@@ -17,14 +17,14 @@ permalink: download
 					</div>
 					<div class="card-body wow slideInUp">
 						<a class="btn btn-xl btn-z wow zoomIn" role="button" href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"
-								onclick="ga('send', 'event', { eventAction: 'download-ef6'});">
+								onclick="ga('send', 'event', { eventAction: 'download'});">
 							<i class="fa fa-cloud-download" aria-hidden="true"></i>
 							NuGet Download
 						</a>
 						<div class="download-count-text">Download Count:</div>
 						<div class="download-count wow lightSpeedIn">
 							<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"
-									onclick="ga('send', 'event', { eventAction: 'download-ef6'});">
+									onclick="ga('send', 'event', { eventAction: 'download'});">
 								<img src="https://zzzprojects.github.io/images/nuget/dapper-plus-big-d.svg">
 							</a>
 						</div>

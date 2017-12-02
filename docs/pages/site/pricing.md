@@ -35,13 +35,13 @@ permalink: pricing
 					<div class="form-group">
 						<label class="form-label form-label-lg">Provider:</label> 
 						<select id="provider_type" name="hosted_button_id" class="form-control" onchange="selectProduct()">
-							<option value="GS977QXB98R2C">SQL Server & SQL Azure</option>							
-							<option value="32JM43GUXW4ZW">MySQL</option>
-							<option value="27ML36DSMHEQA">Oracle</option>
-							<option value="TSCZ2KCM9QBVY">PostgreSQL</option>
-							<option value="55WDUT7ENJBKU">SQLite</option>
-							<option value="5WVPWVNDGRHH6">SQL Compact</option>							
-							<option value="TSCGQDC4YR2MQ">ALL Providers</option>
+							<option value="TJB3SWSLJEC7C">SQL Server/ Azure Provider</option>
+							<option value="UCACT78NAMNLJ">Oracle Provider</option>
+							<option value="76295G8T6N8EN">MySQL Provider</option>
+							<option value="ASN8KBSAGR2DJ">PostgreSQL</option>
+							<option value="GV579KMMBNEAU">SQL Compact Provider</option>
+							<option value="LGP7STYXSNW7S">SQLite Provider</option>
+							<option value="VXEBFHKXL56NE">ALL Providers</option>
 						</select> 
 					</div>
 					<label class="form-label form-label-lg">Seat:</label> 
@@ -61,7 +61,7 @@ permalink: pricing
 					</label>
 				</div>
 				<br />
-				<button type="submit" class="btn btn-z btn-lg" onclick="ga('send', 'event', { eventAction: 'buy-now'});">
+				<button type="submit" class="btn btn-z btn-lg" onclick="ga('send', 'event', { eventAction: 'buy'});">
 					<i class="fa fa-shopping-cart"></i>&nbsp;BUY NOW
 				</button>
 				
@@ -197,7 +197,7 @@ function purchase_validate() {
 	return false;
 }
 function selectProduct() {
-	if($("#provider_type").val() == "TSCGQDC4YR2MQ") {
+	if($("#provider_type").val() == "VXEBFHKXL56NE") {
 		$("#seat1").html("Dapper Plus $799 (1 developer seat)");
 		$("#seat2_4").html("Dapper Plus $999 (2-4 developer seats)");
 		$("#seat5_9").html("Dapper Plus $1199 (5-9 developer seats)");
