@@ -22,7 +22,7 @@ DapperPlusManager.Entity<Order>().Table("Orders").Identity(x => x.ID);
 connection.BulkInsert(orders)
           .AlsoInsert(order => order.Items);
           .Include(order => order.ThenMerge(order => order.Invoice)
-                                 .also(invoice => invoice.Items))
+                                 .AlsoMerge(invoice => invoice.Items))
           .AlsoMerge(order => order.ShippingAddress);
 {% endhighlight %}
 
