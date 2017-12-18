@@ -60,7 +60,7 @@ DapperPlusManager.Entity<Order>()
 connection.BulkInsert(orders)
     .AlsoInsert(order => order.Items);
     .Include(x => x.ThenMerge(order => order.Invoice)
-        .AsloMerge(invoice => invoice.Items))
+        .AlsoMerge(invoice => invoice.Items))
     .AlsoMerge(x => x.ShippingAddress);   
 {% endhighlight %}
 							</div>
