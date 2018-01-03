@@ -56,14 +56,14 @@ The validate method allow you to know whether your license is valid or not.
 {% highlight csharp %}
 // CHECK if the license if valid for the default provider (SQL Server)
 string licenseErrorMessage;
-if (!Z.EntityFramework.Extensions.LicenseManager.ValidateLicense(out licenseErrorMessage))
+if (!Z.Dapper.Plus.DapperPlusManager.ValidateLicense(out licenseErrorMessage))
 {
     throw new Exception(licenseErrorMessage);
 }
 
 // CHECK if the license if valid for a specific provider
 string licenseErrorMessage;
-if (!Z.EntityFramework.Extensions.LicenseManager.ValidateLicense(out licenseErrorMessage, ProviderType.SqlServer))
+if (!Z.Dapper.Plus.DapperPlusManager.ValidateLicense(out licenseErrorMessage, ProviderType.SqlServer))
 {
    throw new Exception(licenseErrorMessage);
 }
