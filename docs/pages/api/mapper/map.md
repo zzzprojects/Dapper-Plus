@@ -106,7 +106,7 @@ Map with constant value
 {% include template-example.html %} 
 {% highlight csharp %}
 DapperPlusManager.Entity<Order>()
-				 .MapValue(2, "ConstantColumn2");
+		 .MapValue(2, "ConstantColumn2");
 {% endhighlight %}
 
 Map with variable
@@ -115,7 +115,7 @@ Map with variable
 {% highlight csharp %}
 var constantValue = 2;
 DapperPlusManager.Entity<Order>()
-				 .MapValue(constantValue, "ConstantColumn2");
+		 .MapValue(constantValue, "ConstantColumn2");
 {% endhighlight %}
 	
 ## Mapper - Output
