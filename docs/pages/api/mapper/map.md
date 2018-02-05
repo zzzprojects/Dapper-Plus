@@ -10,11 +10,12 @@ Dapper Plus Mapper allow mapping the conceptual model (Entity) with the storage 
 | Name	   | Description |
 | :--------| :-----------|
 |Identity	|Sets column(s) which the database generates value. The value is outputted from the destination table (insert and merge action).|
-|Ignore	|Sets column(s) to ignore.|
-|Key	|Sets column(s) to use for Primary Key (update, delete, and merge action).|
-|Map	|Sets column(s) to input to the destination table.|
-|Output	|Sets column(s) to output from the destination table (insert, update, and merge action).|
-|Table	|Sets the destination table or view name (including schema).|
+|Ignore	  |Sets column(s) to ignore.|
+|Key	  |Sets column(s) to use for Primary Key (update, delete, and merge action).|
+|Map	  |Sets column(s) to input to the destination table.|
+|MapValue |Sets value to map to the destination table.|
+|Output	  |Sets column(s) to output from the destination table (insert, update, and merge action).|
+|Table	  |Sets the destination table or view name (including schema).|
 
 ## Mapper - Identity
 
@@ -97,6 +98,26 @@ DapperPlusManager.Entity<Order>()
 				 .Map(order => order.TotalPrice, "TotalPrice");
 {% endhighlight %}
 
+## Mapper - MapValue
+Sets value to map to the destination table.
+
+Map with constant value
+
+{% include template-example.html %} 
+{% highlight csharp %}
+DapperPlusManager.Entity<Order>()
+				 .MapValue(2, "ConstantColumn2");
+{% endhighlight %}
+
+Map with variable
+
+{% include template-example.html %} 
+{% highlight csharp %}
+var constantValue = 2;
+DapperPlusManager.Entity<Order>()
+				 .MapValue(constantValue, "ConstantColumn2");
+{% endhighlight %}
+	
 ## Mapper - Output
 
 Sets column(s) to output from the destination table (insert, update, and merge action).
