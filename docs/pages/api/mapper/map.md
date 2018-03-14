@@ -89,8 +89,7 @@ DapperPlusManager.Entity<Order>()
 
 {% include template-example.html %} 
 {% highlight csharp %}
-DapperPlusManager.Entity<Order>()
-                 .Map(order => new { AvgPrice1 = order.TotalPrice/order.TotalQuantity })
+DapperPlusManager.Entity<Order>())
                  .Map(order => order.TotalPrice / order.TotalQuantity, "AvgPrice2");
 
 DapperPlusManager.Entity<Order>()
