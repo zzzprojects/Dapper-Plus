@@ -63,7 +63,7 @@ if (!Z.Dapper.Plus.DapperPlusManager.ValidateLicense(out licenseErrorMessage))
 
 // CHECK if the license if valid for a specific provider
 string licenseErrorMessage;
-if (!Z.Dapper.Plus.DapperPlusManager.ValidateLicense(out licenseErrorMessage, ProviderType.SqlServer))
+if (!Z.Dapper.Plus.DapperPlusManager.ValidateLicense(out licenseErrorMessage, DapperProviderType.SqlServer))
 {
    throw new Exception(licenseErrorMessage);
 }
