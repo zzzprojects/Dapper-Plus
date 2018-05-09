@@ -1,6 +1,4 @@
----
-permalink: api
----
+# API
 
 <div class="card-group">
     <div class="container">

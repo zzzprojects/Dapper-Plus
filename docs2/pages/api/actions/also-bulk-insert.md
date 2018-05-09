@@ -1,6 +1,4 @@
----
-permalink: also-bulk-insert
----
+# Also Bulk Insert
 
 ## Definition
 

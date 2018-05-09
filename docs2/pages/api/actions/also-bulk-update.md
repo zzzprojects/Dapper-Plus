@@ -1,6 +1,4 @@
----
-permalink: also-bulk-update
----
+# Also Bulk Update
 
 ## Definition
 

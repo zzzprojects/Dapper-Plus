@@ -1,6 +1,4 @@
----
-permalink: licensing
----
+# Licensing
 
 ## Evaluation Period
 - You can evaluate the library for several months before purchasing it.

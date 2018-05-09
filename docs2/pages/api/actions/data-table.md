@@ -1,6 +1,5 @@
----
-permalink: data-table
----
+# Datatable
+
 
 ## Definition
 

@@ -1,6 +1,4 @@
----
-permalink: temporary-table-options
----
+# Temporary Table Options
 
 ## Definition
 

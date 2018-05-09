@@ -1,6 +1,4 @@
----
-permalink: batch-options
----
+# Batch Options
 
 ## Definition
 

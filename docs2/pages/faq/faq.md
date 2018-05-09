@@ -1,6 +1,4 @@
----
-permalink: faq
----
+# FAQ
 
 ## FAQ
 

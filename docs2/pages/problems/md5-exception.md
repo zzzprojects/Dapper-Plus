@@ -1,6 +1,4 @@
----
-permalink: md5-exception
----
+# MD5 Exception
 
 ## Problem
 

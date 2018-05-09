@@ -1,6 +1,4 @@
----
-permalink: then-bulk-merge
----
+# Then Bulk Merge
 
 ## Definition
 

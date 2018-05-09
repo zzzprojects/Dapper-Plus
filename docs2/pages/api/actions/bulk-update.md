@@ -1,6 +1,5 @@
----
-permalink: bulk-update
----
+# Bulk Update
+
 
 ## Definition
 

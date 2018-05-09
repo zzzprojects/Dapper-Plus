@@ -1,6 +1,4 @@
----
-permalink: transaction
----
+# Transaction
 
 ## Definition
 

@@ -1,6 +1,4 @@
----
-permalink: pricing
----
+# Purchase
 
 <!-- validation !-->
 <div id="error_validation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal_agreement" aria-hidden="true">

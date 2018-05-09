@@ -1,6 +1,4 @@
----
-permalink: dapper-plus-mapper
----
+# Dapper Plus - Mapper
 
 ## Definition
 Dapper Plus Mapper allow to map the conceptual model (Entity) with the storage model (Database) and configure options to perform Bulk Actions.

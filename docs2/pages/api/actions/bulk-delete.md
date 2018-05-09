@@ -1,6 +1,4 @@
----
-permalink: bulk-delete
----
+# Bulk Delete
 
 ## Definition
 

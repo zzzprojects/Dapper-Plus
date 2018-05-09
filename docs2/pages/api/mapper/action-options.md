@@ -1,6 +1,4 @@
----
-permalink: action-options
----
+# Action Options
 
 ## InsertIfNotExists
 

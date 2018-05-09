@@ -1,6 +1,4 @@
----
-permalink: also-bulk-merge
----
+# Also Bulk Merge
 
 ## Definition
 

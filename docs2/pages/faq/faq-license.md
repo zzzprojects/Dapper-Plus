@@ -1,6 +1,4 @@
----
-permalink: faq-license
----
+# FAQ - License
 
 ## Developer Seat
 

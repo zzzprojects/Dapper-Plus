@@ -1,6 +1,4 @@
----
-permalink: dapper-plus-manager
----
+# Dapper Plus - Manager
 
 ## Definition
 

@@ -1,10 +1,10 @@
-# Dapper Plus - Relationship
-
-## Definition
+---
+permalink: relationship
+---
 
 In our example, you often see us chaining multiples action without specifying the relation parent/child even when the parent use an auto-generated identity value.
 
-{% include template-example.html title='Relationship Examples' %} 
+
 ```csharp
 connection.BulkInsert(lefts, left => left.Rights);
 
@@ -12,18 +12,17 @@ connection.BulkInsert(lefts)
           .ThenBulkInsert(left => left.Rights);
 ```
 
-In this article, you will learn how to handle this kind of relation:
 
- - Foreign Key Property
- - Navigation Property
+In this article, you will learn how to handle this kind of relation:
+- [Foreign Key Property](#foreign-key-property)
+- [Navigation Property](#navigation-property)
 
 ## Foreign Key Property
-
 A foreign key property happens when the child entity duplicates the value of the parent.
 
+### Example
 
 ```csharp
-
 public class Left
 {
     public int ID { get; set; }
@@ -41,13 +40,13 @@ public class Right
 }
 ```
 
-### With AfterAction Event
 
+### With AfterAction Event
 After an insert or merge happen on the parent, we assign the "LeftID" value of the child using the value generated "ID" from the parent.
 
+#### Example
 
 ```csharp
-
 // MAP
 DapperPlusManager.Entity<Left>().Table("Left")
     .Identity(x => x.ID)
@@ -68,12 +67,11 @@ connection.BulkInsert(lefts)
 ```
 
 ### With ThenForEach Method
-
 After an insert or merge happen on the parent, we assign the "LeftID" value of the child using the value generated "ID" from the parent.
 
+#### Example
 
 ```csharp
-
 // MAP
 DapperPlusManager.Entity<Left>().Table("Left")
     .Identity(x => x.ID)
@@ -88,12 +86,11 @@ connection.BulkInsert(lefts)
 ```
 
 ## Navigation Property
-
 A navigation property happen when the child has a reference to the parent.
 
+### Example
 
 ```csharp
-
 public class Left
 {
     public int ID { get; set; }
@@ -112,12 +109,11 @@ public class Right
 ```
 
 ### With AfterAction Event
-
 After the action happens, we assign the Left navigation property with the parent.
 
+#### Example
 
 ```csharp
-
 // MAP
 DapperPlusManager.Entity<Left>().Table("Left")
     .Identity(x => x.ID)
@@ -144,12 +140,11 @@ connection.BulkInsert(lefts)
 ```
 
 ### With ThenForEach Method
-
 After the action happens, we assign the Left navigation property with the parent.
 
+#### Example
 
 ```csharp
-
 // MAP
 DapperPlusManager.Entity<Left>().Table("Left")
     .Identity(x => x.ID)
@@ -167,6 +162,4 @@ DapperPlusManager.Entity<Right>().Table("Right")
 connection.BulkInsert(lefts)
           .ThenForEach(x => x.Rights.ForEach(y => y.Left = x))
           .ThenBulkInsert(x => x.Rights);
-
 ```
-

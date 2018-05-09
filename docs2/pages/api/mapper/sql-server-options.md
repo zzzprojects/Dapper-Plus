@@ -1,6 +1,4 @@
----
-permalink: sql-server-options
----
+# SQL Server Options
 
 ## Definition
 

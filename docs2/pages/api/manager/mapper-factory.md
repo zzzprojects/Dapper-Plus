@@ -1,6 +1,4 @@
----
-permalink: mapper-factory
----
+# Mapper Factory
 
 ## Definition
 

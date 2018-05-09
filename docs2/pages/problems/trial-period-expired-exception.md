@@ -1,6 +1,4 @@
----
-permalink: trial-period-expired-exception
----
+# Trial Period Expired Exception
 
 ## Problem
 

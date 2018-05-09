@@ -1,6 +1,4 @@
----
-permalink: bulk-insert
----
+# Bulk Insert
 
 ## Definition
 

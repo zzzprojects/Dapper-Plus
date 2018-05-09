@@ -1,6 +1,4 @@
----
-permalink: then-bulk-update
----
+# Then Bulk Update
 
 ## Definition
 

@@ -1,6 +1,4 @@
----
-permalink: dapper-plus-actions
----
+# Dapper Plus - Actions
 
 ## Bulk Actions
 The Dapper Plus Bulk[Action] method allow to [Action] entities in a database table or a view

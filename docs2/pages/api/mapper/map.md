@@ -1,6 +1,4 @@
----
-permalink: map
----
+# Map
 
 ## Definition
 

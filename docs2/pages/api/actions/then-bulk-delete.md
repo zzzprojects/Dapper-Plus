@@ -1,6 +1,4 @@
----
-permalink: then-bulk-delete
----
+# Then Bulk Update
 
 ## Definition
 

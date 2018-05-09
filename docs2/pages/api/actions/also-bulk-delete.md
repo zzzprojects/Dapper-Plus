@@ -1,6 +1,4 @@
----
-permalink: also-bulk-delete
----
+# Also Bulk Delete
 
 ## Definition
 

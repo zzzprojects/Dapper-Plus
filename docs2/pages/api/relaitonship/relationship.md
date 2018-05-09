@@ -1,6 +1,4 @@
----
-permalink: relationship
----
+# Relationship
 
 In our example, you often see us chaining multiples action without specifying the relation parent/child even when the parent use an auto-generated identity value.
 

@@ -1,6 +1,5 @@
----
-permalink: bulk-merge
----
+# Bulk Merge
+
 
 ## Definition
 

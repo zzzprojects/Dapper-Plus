@@ -1,6 +1,4 @@
----
-permalink: transient-error-options
----
+# Transient Error Options
 
 ## Definition
 

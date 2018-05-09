@@ -1,6 +1,4 @@
----
-permalink: then-bulk-insert
----
+# Then Bulk Insert
 
 ## Definition
 

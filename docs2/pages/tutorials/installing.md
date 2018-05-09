@@ -1,6 +1,4 @@
----
-permalink: installing
----
+# Installing
 
 **Dapper Plus** can be installed through NuGet.
 

@@ -1,6 +1,4 @@
----
-permalink: include-actions
----
+# Include Actions
 
 ## Include Actions
 
