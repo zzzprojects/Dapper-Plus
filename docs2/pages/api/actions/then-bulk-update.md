@@ -12,8 +12,8 @@ The lambda expression use the entity or the IEnumerable<TEntity> from the last B
 
 The Dapper Plus ThenBulkUpdate method allow updating a related item with a "One to One" relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Update an order and then the related invoice.
 connection.BulkUpdate(orderTransaction)
@@ -24,14 +24,14 @@ connection.BulkUpdate(orderTransaction)
 connection.BulkUpdate(orderTransaction)
           .ThenBulkUpdate(transaction => transaction.orders)
           .ThenBulkUpdate(order => order.Invoice);
-{% endhighlight %}
+```
 
 ## Then Bulk Update with "One to Many" Relation
 
 The Dapper Plus ThenBulkUpdate method allow updating related items with a "One to Many" relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Update an order and then all related items.
 connection.BulkUpdate(orderTransaction)
@@ -42,14 +42,14 @@ connection.BulkUpdate(orderTransaction)
 connection.BulkUpdate(orderTransaction)
           .ThenBulkUpdate(transaction => transaction.orders);
           .ThenBulkUpdate(order => order.Items);
-{% endhighlight %}
+```
 
 ## Then Bulk Update Chaining
 
 The Dapper Plus ThenBulkUpdate method allow chaining multiple bulk action methods.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Update an order and then all related items. Update an invoice and then all related items.
 connection.BulkUpdate(orderTransaction)
@@ -67,4 +67,4 @@ connection.BulkUpdate(orderTransaction)
           .BulkUpdate(invoiceTransaction)
           .ThenBulkUpdate(transaction => transaction.invoices)
           .ThenBulkUpdate(invoice => invoice.Items);
-{% endhighlight %}
+```

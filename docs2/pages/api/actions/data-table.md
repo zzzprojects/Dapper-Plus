@@ -6,8 +6,8 @@ permalink: data-table
 
 Dapper Plus can also perform operation on DataTable
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 var dt = new DataTable();
 dt.Columns.Add("ID", typeof(int));
@@ -30,4 +30,4 @@ using (var conn = My.ConnectionFactory())
 	conn.BulkInsert("Map_01", dt);
 }
 
-{% endhighlight %}
+```

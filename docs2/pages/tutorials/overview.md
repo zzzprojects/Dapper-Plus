@@ -12,9 +12,9 @@ The library is installed through <a href="/installing">NuGet</a>. Extension meth
 
 It can be used with or without Dapper, and it's compatible with all others Dapper packages.
 
-{% include template-example.html %} 
 
-{% highlight csharp %}
+
+```csharp
 // CONFIGURE & MAP entity
 DapperPlusManager.Entity<Order>().Table("Orders").Identity(x => x.ID);
 
@@ -24,7 +24,7 @@ connection.BulkInsert(orders)
           .Include(order => order.ThenMerge(order => order.Invoice)
                                  .AlsoMerge(invoice => invoice.Items))
           .AlsoMerge(order => order.ShippingAddress);
-{% endhighlight %}
+```
 
 ## Mapper
 
@@ -32,11 +32,11 @@ connection.BulkInsert(orders)
 
 {% include template-example.html title='Mapper Examples'%} 
 
-{% highlight csharp %}
+```csharp
 DapperPlusManager.Entity<Order>().Table("Orders")
                                  .Identity(x => x.ID)
                                  .BatchSize(200);
-{% endhighlight %}
+```
 
 ## Bulk Actions
 
@@ -50,12 +50,12 @@ Bulk Actions Available:
 - [BulkMerge](/bulk-merge) (UPSERT operation)
 
 {% include template-example.html title='Bulk Actions Examples' %} 
-{% highlight csharp %}
+```csharp
 connection.BulkInsert(orders, order => order.Items)
           .BulkInsert(invoices, invoice => invoice.Items)
           .BulkMerge(shippingAddresses);
 
-{% endhighlight %}
+```
 
 ### Performance Comparisons
 
@@ -71,34 +71,34 @@ connection.BulkInsert(orders, order => order.Items)
 **Also Bulk Actions** allow to perform bulk action with a lambda expression using entities from the last Bulk[Action] or ThenBulk[Action] used.
 
 {% include template-example.html title='Also Bulk Actions Examples' %} 
-{% highlight csharp %}
+```csharp
 connection.BulkInsert(orders)
           .AlsoInsert(order => order.Items)
           .AlsoInsert(order => order.Invoice)
           .AlsoInsert(order => order.Invoice.Items);
-{% endhighlight %}
+```
 
 ## Then Bulk Actions
 
 **Then Bulk Actions** is similar to Also Bulk Actions but modify entities used for the next bulk action using a lambda expression.
 
 {% include template-example.html title='Then Bulk Actions Examples' %} 
-{% highlight csharp %}
+```csharp
 connection.BulkInsert(orders)
           .AlsoInsert(order => order.Items)
           .ThenInsert(order => order.Invoice)
           .ThenInsert(invoice => invoice.Items);
-{% endhighlight %}
+```
 
 ## Include Actions
 
 The Dapper Plus **Include** method allow resolving issues with multiple "ThenBulk[Action]" method.
 
 {% include template-example.html title='Include Actions Examples' %} 
-{% highlight csharp %}
+```csharp
 connection.BulkInsert(orders)
           .Include(x => x.ThenInsert(order => order.Items)
                          .ThenInsert(orderItem => orderItem.Metas))
           .Include(x => x.ThenInsert(order => order.Invoice)
                          .ThenInsert(Invoice => invoice.Items));
-{% endhighlight %}
+```

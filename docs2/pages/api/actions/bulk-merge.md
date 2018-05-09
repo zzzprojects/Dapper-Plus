@@ -10,78 +10,78 @@ The Dapper Plus BulkMerge method allow to MERGE entities in a database table or 
 
 The Dapper Plus BulkMerge method allow merging a single or multiple entities of the same type.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Merge a single order.
 connection.BulkMerge(order);
 
 //Merge multiple orders.
 connection.BulkMerge(order1, order2, order3);
-{% endhighlight %}
+```
 
 ## Bulk Merge IEnumerable<TEntity>
 
 The Dapper Plus BulkMerge method allow merging a single enumerable or multiple enumerable of entities of the same type.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Merge a list of orders.
 connection.BulkMerge(orders);
 
 //Merge multiple list of orders.
 connection.BulkMerge(orders1, orders2, orders3);
-{% endhighlight %}
+```
 
 ## Bulk Merge with "One to One" Relation
 
 The Dapper Plus BulkMerge method allow merging a related item with a "One to One" relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Merge an order and the related invoice.
 connection.BulkMerge(order, order => order.Invoice);
 
 //Merge a list of orders and the related invoice to every order.
 connection.BulkMerge(orders, order => order.Invoice);
-{% endhighlight %}
+```
 
 ## Bulk Merge with "One to Many" Relation
 
 The Dapper Plus BulkMerge method allow merging related items with a "One to Many" relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Merge an order and all related items.
 connection.BulkMerge(order, order => order.Items);
 
 //Merge a list of orders and all related items to every order.
 connection.BulkMerge(orders, order => order.Items);
-{% endhighlight %}
+```
 
 ## Bulk Merge with "Mixed" Relation
 
 The Dapper Plus BulkMerge method allow merging related item(s) with any relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Merge an order, all related items, and the related invoice.
 connection.BulkMerge(order, order => order.Items, order => order.Invoice);
 
 //Merge a list of orders, all related items to every order, and the related invoice to every order.
 connection.BulkMerge(orders, order => order.Items, order => order.Invoice);
-{% endhighlight %}
+```
 
 ## Bulk Merge Chain Action
 
 The Dapper Plus BulkMerge method allow chaining multiple bulk action methods.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Merge an order and all related items. Merge an invoice and all related invoice items.
 connection.BulkMerge(order, order => order.Items)
@@ -92,5 +92,5 @@ connection.BulkMerge(order, order => order.Items)
 connection.BulkMerge(orders, order => order.Items)
           .BulkMerge(invoices, invoice => invoice.Items);
 
-{% endhighlight %}
+```
 

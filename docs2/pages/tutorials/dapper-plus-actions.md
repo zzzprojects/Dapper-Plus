@@ -10,14 +10,14 @@ The Dapper Plus Bulk[Action] method allow to [Action] entities in a database tab
  - [Bulk Delete](/bulk-delete)
  - [Bulk Merge](/bulk-merge)
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 connection.BulkInsert(orders, order => order.Items)
           .BulkInsert(invoices, invoice => invoice.Items)
           .BulkMerge(shippingAddresses);
 
-{% endhighlight %}
+```
 
 ## Also Bulk Actions
 
@@ -30,13 +30,13 @@ The lambda expression use the entity or the IEnumerable from the last Bulk[Actio
  - [Also Bulk Delete](/also-bulk-delete)
  - [Also Bulk Merge](/also-bulk-merge)
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 connection.BulkInsert(orders)
           .AlsoInsert(order => order.Items)
           .AlsoInsert(order => order.Invoice)
           .AlsoInsert(order => order.Invoice.Items);
-{% endhighlight %}
+```
 
 ## Then Bulk Actions
 
@@ -49,13 +49,13 @@ The lambda expression use the entity or the IEnumerable from the last Bulk[Actio
  - [Then Bulk Delete](/then-bulk-delete)
  - [Then Bulk Merge](/then-bulk-merge)
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 connection.BulkInsert(orderTransaction)
           .ThenBulkInsert(transaction => transaction.order)
           .ThenBulkInsert(order => order.Invoice);
 
-{% endhighlight %}
+```
 
 ## Include Actions
 
@@ -63,24 +63,24 @@ The Dapper Plus Include method allow resolving issues with multiple "ThenBulk[Ac
 
  - [Include Actions](/include-actions)
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 connection.BulkInsert(orders)
           .Include(x => x.ThenInsert(order => order.Items)
                          .ThenInsert(orderItem => orderItem.Metas))
           .Include(x => x.ThenInsert(order => order.Invoice)
                          .ThenInsert(Invoice => invoice.Items));
-{% endhighlight %}
+```
 
 ## Transaction
 
 All Dapper Plus extension methods are also available on the IDbTransaction interface
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 transaction.BulkInsert(orders)
           .Include(x => x.ThenInsert(order => order.Items)
                          .ThenInsert(orderItem => orderItem.Metas))
           .Include(x => x.ThenInsert(order => order.Invoice)
                          .ThenInsert(Invoice => invoice.Items));
-{% endhighlight %}
+```

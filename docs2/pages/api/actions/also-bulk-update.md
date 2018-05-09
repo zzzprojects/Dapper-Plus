@@ -13,8 +13,8 @@ The lambda expression use the entity or the IEnumerable<TEntity> from the last B
 
 The Dapper Plus AlsoBulkUpdate method allow updating a related item with a "One to One" relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Update an order and also the related invoice.
 connection.BulkUpdate(order)
@@ -24,14 +24,14 @@ connection.BulkUpdate(order)
 
 connection.BulkUpdate(orders)
           .AlsoBulkUpdate(order => order.Invoice);
-{% endhighlight %}
+```
 
 ## Also Bulk Update with "One to Many" Relation
 
 The Dapper Plus AlsoBulkUpdate method allow updating related items with a "One to Many" relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Update an order and also all related items.
 connection.BulkUpdate(order)
@@ -40,14 +40,14 @@ connection.BulkUpdate(order)
 //Update a list of orders and also all related items to every order.
 connection.BulkUpdate(orders);
           .AlsoBulkUpdate(order => order.Items);
-{% endhighlight %}
+```
 
 ## Also Bulk Update and Mixed Relation
 
 The Dapper Plus AlsoBulkUpdate method allow updating related item(s) with any relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Update an order, also all related items and also the related invoice.
 connection.BulkUpdate(order)
@@ -57,14 +57,14 @@ connection.BulkUpdate(order)
 //to every order.
 connection.BulkUpdate(orders)
           .AlsoBulkUpdate(order => order.Items, order => order.Invoice);
-{% endhighlight %}
+```
 
 ## Also Bulk Update Chain Action
 
 The Dapper Plus AlsoBulkUpdate method allow chaining multiple bulk action methods.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Update an order and also all related items. Update an invoice and also all related invoice items.
 connection.BulkUpdate(order)
@@ -79,4 +79,4 @@ connection.BulkUpdate(orders)
           .BulkUpdate(invoices)
           .AlsoBulkUpdate(invoice => invoice.Items);
 
-{% endhighlight %}
+```

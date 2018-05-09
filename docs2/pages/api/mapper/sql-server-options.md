@@ -14,8 +14,8 @@ Dapper Plus Mapper allow to configure SqlServer options.
 
 Sets the SqlBulkCopyOptions to use if SqlBulkCopy is used to insert directly in the table. For example, configure the entity order to use CheckConstraint, FireTrigger and TableLock.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 //Default
 var options = SqlBulkCopyOptions.CheckConstraints |
               SqlBulkCopyOptions.FireTriggers |
@@ -29,4 +29,4 @@ var options = SqlBulkCopyOptions.CheckConstraints |
               SqlBulkCopyOptions.TableLock;
 
 DapperPlusManager.Entity<Order>().SqlBulkCopyOptions(options);
-{% endhighlight %}
+```

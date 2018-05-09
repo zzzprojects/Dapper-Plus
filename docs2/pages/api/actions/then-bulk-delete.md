@@ -12,8 +12,8 @@ The lambda expression use the entity or the IEnumerable<TEntity> from the last B
 
 The Dapper Plus ThenBulkDelete method allow deleting a related item with a "One to One" relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Delete an order and then the related invoice.
 connection.BulkDelete(orderTransaction)
@@ -24,14 +24,14 @@ connection.BulkDelete(orderTransaction)
 connection.BulkDelete(orderTransaction)
           .ThenBulkDelete(transaction => transaction.orders)
           .ThenBulkDelete(order => order.Invoice);
-{% endhighlight %}
+```
 
 ## Then Bulk Delete with "One to Many" Relation
 
 The Dapper Plus ThenBulkDelete method allow deleting related items with a "One to Many" relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Delete an order and then all related items.
 connection.BulkDelete(orderTransaction)
@@ -42,14 +42,14 @@ connection.BulkDelete(orderTransaction)
 connection.BulkDelete(orderTransaction)
           .ThenBulkDelete(transaction => transaction.orders);
           .ThenBulkDelete(order => order.Items);
-{% endhighlight %}
+```
 
 ## Then Bulk Delete Chaining
 
 The Dapper Plus ThenBulkDelete method allow chaining multiple bulk action methods.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Delete an order and then all related items. Delete an invoice and then all related items.
 connection.BulkDelete(orderTransaction)
@@ -68,4 +68,4 @@ connection.BulkDelete(orderTransaction)
           .ThenBulkDelete(transaction => transaction.invoices)
           .ThenBulkDelete(invoice => invoice.Items);
 
-{% endhighlight %}
+```

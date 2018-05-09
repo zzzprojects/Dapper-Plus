@@ -16,19 +16,19 @@ permalink: licensing
 ## Setup License from config file
 The license name and key can be directly be added in the app.config or web.config file in the appSettings section.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 <appSettings>
 	<add key="Z_Dapper_Plus_LicenseName" value="[licenseName]"/>
 	<add key="Z_Dapper_Plus_LicenseKey" value="[licenseKey]"/>
 </appSettings>
-{% endhighlight %}
+```
 
 ## Setup License from code
 The license can be added directly in the code of your application. Make sure to follow recommendations about where to add this code. Upon purchase completion, an email will be sent with your license key information.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 // using Z.Dapper.Plus; // Don't forget to include this.
 
 string licenseName = //... PRO license name
@@ -36,7 +36,7 @@ string licenseKey = //... PRO license key
 
 DapperPlusManager.AddLicense(licenseName, licenseKey);
 
-{% endhighlight %}
+```
 
 **ENSURE** to always test the license the first time you setup it
 
@@ -52,8 +52,8 @@ DapperPlusManager.AddLicense(licenseName, licenseKey);
 
 The validate method allow you to know whether your license is valid or not.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 // CHECK if the license if valid for the default provider (SQL Server)
 string licenseErrorMessage;
 if (!Z.Dapper.Plus.DapperPlusManager.ValidateLicense(out licenseErrorMessage))
@@ -67,7 +67,7 @@ if (!Z.Dapper.Plus.DapperPlusManager.ValidateLicense(out licenseErrorMessage, Da
 {
    throw new Exception(licenseErrorMessage);
 }
-{% endhighlight %}
+```
 
 Another way to check if your license is valid is simply adding an invalid license instead.
 

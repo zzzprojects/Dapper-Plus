@@ -12,8 +12,8 @@ The lambda expression use the entity or the IEnumerable<TEntity> from the last B
 
 The Dapper Plus ThenBulkMerge method allow merging a related item with a "One to One" relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Merge an order and then the related invoice.
 connection.BulkMerge(orderTransaction)
@@ -24,14 +24,14 @@ connection.BulkMerge(orderTransaction)
 connection.BulkMerge(orderTransaction)
           .ThenBulkMerge(transaction => transaction.orders)
           .ThenBulkMerge(order => order.Invoice);
-{% endhighlight %}
+```
 
 ## Then Bulk Merge with "One to Many" Relation
 
 The Dapper Plus ThenBulkMerge method allow merging related items with a "One to Many" relation.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Merge an order and then all related items.
 connection.BulkMerge(orderTransaction)
@@ -42,14 +42,14 @@ connection.BulkMerge(orderTransaction)
 connection.BulkMerge(orderTransaction)
           .ThenBulkMerge(transaction => transaction.orders);
           .ThenBulkMerge(order => order.Items);
-{% endhighlight %}
+```
 
 ## Then Bulk Merge Chaining
 
 The Dapper Plus ThenBulkMerge method allow chaining multiple bulk action methods.
 
-{% include template-example.html %} 
-{% highlight csharp %}
+
+```csharp
 
 //Merge an order and then all related items. Merge an invoice and then all related items.
 connection.BulkMerge(orderTransaction)
@@ -66,4 +66,4 @@ connection.BulkMerge(orderTransaction)
           .BulkMerge(invoiceTransaction)
           .ThenBulkMerge(transaction => transaction.invoices)
           .ThenBulkMerge(invoice => invoice.Items);
-{% endhighlight %}
+```

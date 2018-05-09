@@ -29,9 +29,9 @@ Dapper Plus Mapper allow to map the conceptual model (Entity) with the storage m
 
 
 {% include template-example.html title='Mapper Examples' %} 
-{% highlight csharp %}
+```csharp
 DapperPlusManager.Entity<Order>().Table("Orders")
                                  .Identity(x => x.ID)
                                  .BatchSize(200);
-{% endhighlight %}
+```
 
