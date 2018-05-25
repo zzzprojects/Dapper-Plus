@@ -21,7 +21,6 @@ The latest version always contains a trial that expires at the end of the month.
                             <i class="fas fa-cloud-download-alt" aria-hidden="true"></i>
                             NuGet Download
                         </a>
-
                         <div class="counted-downloads">
                             Downloaded
                             <div class="actual-count-number">
@@ -29,7 +28,6 @@ The latest version always contains a trial that expires at the end of the month.
                             </div>
                             times!
                         </div>
-
                     </div>
                 </div>
             </div>
