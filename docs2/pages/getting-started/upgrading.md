@@ -9,32 +9,25 @@ Before upgrading:
 
 ## Step 2 - NuGet Download
 
-<div class="row">
-	<div class="col-lg-6">
-		<div class="card card-layout-z2 wow slideInLeft">
-			<div class="card-header wow slideInDown">
-				<h3>
-					<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"
-							onclick="ga('send', 'event', { eventAction: 'download-upgrading'});">
-						Dapper Plus
-					</a>
-				</h3>						
-			</div>
-			<div class="card-body wow slideInUp">
-				<a class="btn btn-xl btn-z wow zoomIn" role="button" href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"
-						onclick="ga('send', 'event', { eventAction: 'download-upgrading'});">
-					<i class="fa fa-cloud-download" aria-hidden="true"></i>
-					NuGet Download
-				</a>
-				<div>Download Count:</div>
-				<div class="download-count2">
-					<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"
-							onclick="ga('send', 'event', { eventAction: 'download-upgrading'});">
-						<img src="https://zzzprojects.github.io/images/nuget/dapper-plus-big-d.svg">
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<br /><br /><br />
+<div class="row justify-content-center container-box-download">
+                <div class="col-lg-6 box-download">
+                    <div class="box-content">
+                        <div class="version">
+                            <a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});">
+                                Dapper <span class="caracter-highlight align-top">Plus</span>
+                            </a>
+                        </div>
+                        <a class="btn btn-xl btn-z wow zoomIn" role="button" href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});" style="visibility: visible; animation-name: zoomIn;">
+                            <i class="fas fa-cloud-download-alt" aria-hidden="true"></i>
+                            NuGet Download
+                        </a>
+                        <div class="counted-downloads">
+                            Downloaded
+                            <div class="actual-count-number">
+                                26,359
+                            </div>
+                            times!
+                        </div>
+                    </div>
+                </div>
+            </div>
