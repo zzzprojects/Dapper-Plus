@@ -65,7 +65,7 @@ permalink: pricing
 					<i class="fa fa-shopping-cart"></i>&nbsp;BUY NOW
 				</button>
 				
-				<div class="more-option">*&nbsp;Read the FAQ below for alternative payment method.</div>				
+				<div class="more-option">*&nbsp;Read the FAQ below for alternative payment methods.</div>				
 			</form>
 			
 		</div>
