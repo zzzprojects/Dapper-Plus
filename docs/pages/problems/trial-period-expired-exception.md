@@ -22,7 +22,7 @@ You execute a method from the Dapper-Plus library, and the following error is th
 
 You can extend your trial by downloading the latest version: [Upgrading](http://dapper-plus.net/upgrading)
 
-The latest version always contains a trial for the current month to allows a company to evaluate our library for several months.
+The latest version always contains a trial for the current month to allow a company to evaluate our library for several months.
 
 #### License Badly Registered
 
