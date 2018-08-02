@@ -24,6 +24,18 @@ connection.BulkInsert(orders)
           .AlsoMerge(order => order.ShippingAddress);
 ```
 
+## Requirements
+
+### Database Provider
+
+- SQL Server 2008+
+- SQL Azure
+- SQL Compact
+- Oracle
+- MySQL
+- PostgreSQL
+- SQLite
+
 ## Mapper
 
 **Dapper Plus Mapper** allow to map the conceptual model (Entity) with the storage model (Database) and configure options to perform Bulk Actions.
