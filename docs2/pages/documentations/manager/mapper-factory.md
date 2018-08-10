@@ -6,7 +6,7 @@ Sets the mapper factory to use to create a new Mapper.
 
 Existing Mapper instance is not affected by the change from mapper factory.
 
-{% include template-example.html title='Mapper Factory Examples' %} 
+### Mapper Factory Examples
 ```csharp
 // Use default batch size (Mapper created before MapperFactory configuration)
 DapperPlusManager.Entity<Order>();
