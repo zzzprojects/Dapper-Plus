@@ -8,7 +8,7 @@ Adds or updates the mapper associated with the type and mapping key.
 
 Adds or updates the mapper associated with the type.
 
-{% include template-example.html title='Entity Examples' %} 
+### Entity Examples
 ```csharp
 
 DapperPlusManager.Entity<Order>()
@@ -21,7 +21,7 @@ connection.BulkInsert(orders);
 
 Adds or updates the mapper associated with the type and mapping key.
 
-{% include template-example.html title='Entity with Mapping Key Examples' %} 
+### Entity with Mapping Key Examples
 ```csharp
 DapperPlusManager.Entity<Order>("CustomKey")
                  .Table("CustomOrders");
@@ -31,7 +31,7 @@ connection.BulkInsert("CustomKey", orders);
 
 We highly recommend using an enum value for the mapping key
 
-{% include template-example.html title='BulkSaveChanges Examples' %} 
+### BulkSaveChanges Examples 
 ```csharp
 
 DapperPlusManager.Entity<Order>(MappingKey.CustomKey1.ToString())
