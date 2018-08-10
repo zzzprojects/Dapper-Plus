@@ -43,7 +43,7 @@ Download the <a href="/download">NuGet Package</a>
 
 **Dapper Plus Mapper** allow to map the conceptual model (Entity) with the storage model (Database) and configure options to perform Bulk Actions.
 
-{% include template-example.html title='Mapper Examples'%} 
+### Mapper Examples
 
 ```csharp
 DapperPlusManager.Entity<Order>().Table("Orders")
@@ -62,7 +62,7 @@ Bulk Actions Available:
 - [BulkDelete](/bulk-delete)
 - [BulkMerge](/bulk-merge) (UPSERT operation)
 
-{% include template-example.html title='Bulk Actions Examples' %} 
+### Bulk Actions Examples
 ```csharp
 connection.BulkInsert(orders, order => order.Items)
           .BulkInsert(invoices, invoice => invoice.Items)
@@ -83,7 +83,7 @@ connection.BulkInsert(orders, order => order.Items)
 
 **Also Bulk Actions** allow to perform bulk action with a lambda expression using entities from the last Bulk[Action] or ThenBulk[Action] used.
 
-{% include template-example.html title='Also Bulk Actions Examples' %} 
+### Also Bulk Actions Examples
 ```csharp
 connection.BulkInsert(orders)
           .AlsoInsert(order => order.Items)
@@ -95,7 +95,7 @@ connection.BulkInsert(orders)
 
 **Then Bulk Actions** is similar to Also Bulk Actions but modify entities used for the next bulk action using a lambda expression.
 
-{% include template-example.html title='Then Bulk Actions Examples' %} 
+### Then Bulk Actions Examples
 ```csharp
 connection.BulkInsert(orders)
           .AlsoInsert(order => order.Items)
@@ -107,7 +107,7 @@ connection.BulkInsert(orders)
 
 The Dapper Plus **Include** method allow resolving issues with multiple "ThenBulk[Action]" method.
 
-{% include template-example.html title='Include Actions Examples' %} 
+### Include Actions Examples
 ```csharp
 connection.BulkInsert(orders)
           .Include(x => x.ThenInsert(order => order.Items)

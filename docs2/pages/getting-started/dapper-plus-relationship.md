@@ -4,7 +4,7 @@
 
 In our example, you often see us chaining multiples action without specifying the relation parent/child even when the parent use an auto-generated identity value.
 
-{% include template-example.html title='Relationship Examples' %} 
+### Relationship Examples
 ```csharp
 connection.BulkInsert(lefts, left => left.Rights);
 

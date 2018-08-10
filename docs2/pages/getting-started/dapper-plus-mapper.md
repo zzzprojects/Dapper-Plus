@@ -26,7 +26,7 @@ Dapper Plus Mapper allow to map the conceptual model (Entity) with the storage m
    - Retry Interval
 
 
-{% include template-example.html title='Mapper Examples' %} 
+### Mapper Examples
 ```csharp
 DapperPlusManager.Entity<Order>().Table("Orders")
                                  .Identity(x => x.ID)
