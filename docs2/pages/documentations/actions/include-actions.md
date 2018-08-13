@@ -8,7 +8,7 @@ The Dapper Plus Include method allow resolving issues with multiple "ThenBulk[Ac
 
 Without include method (The invoice cannot be chained to last action)
 
-{% include template-example.html title='Without include Example' %} 
+#### Without include Example
 ```csharp
 connection.BulkInsert(orders)
           .ThenInsert(order => order.Items)
@@ -19,7 +19,7 @@ connection.BulkInsert(orders)
 
 With include method
 
-{% include template-example.html title='With include Example' %} 
+#### With include Example
 ```csharp
 connection.BulkInsert(orders)
           .Include(x => x.ThenInsert(order => order.Items)
