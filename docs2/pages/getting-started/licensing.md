@@ -12,7 +12,7 @@
 - Make sure to check your **SPAM** folder if you don't receive the license within 24h.
 
 ## Setup License from config file
-The license name and key can be directly be added in the app.config or web.config file in the appSettings section.
+The license name and key can be added directly in the app.config or web.config file in the appSettings section.
 
 
 ```csharp
@@ -44,7 +44,7 @@ DapperPlusManager.AddLicense(licenseName, licenseKey);
 - **WinForm App:** Use the main thread method to activate your license.
 - **Win Service:** Use the OnStart method to activate your license
 
-> The AddLicense must always be set before the first call to the library. Otherwise, the monthly trial will start.
+> The AddLicense must be set before the first call to the library. Otherwise, the monthly trial will start.
 
 ## How can I check if my license is valid?
 
