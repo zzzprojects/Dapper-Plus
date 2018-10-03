@@ -6,7 +6,7 @@
 
 People using this library often report performance enhancement by 50x times and more!
 
-The library is installed through <a href="/installing">NuGet</a>. Extension methods are added automatically to your IDbConnection interface.
+The library is installed through <a href="/download">NuGet</a>. Extension methods are added automatically to your IDbConnection interface.
 
 It can be used with or without Dapper, and it's compatible with all others Dapper packages.
 
