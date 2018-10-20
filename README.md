@@ -183,7 +183,7 @@ Contact our outstanding customer support for any request. We usually answer with
 ## PRO
 _PRO Version unlocked for the current month_
 
-Features                    | [PRO Version](http://dapper-plus.net/#pro)
+Features                    | [PRO Version](https://dapper-plus.net/#pro)
 --------                    | :-------------: |
 Bulk Insert                 | Yes
 Bulk Update                 | Yes
@@ -196,7 +196,7 @@ Commercial License          | Yes
 Royalty-Free                | Yes
 Support & Upgrades (1 year) | Yes
 
-Learn more about the **[PRO Version](http://dapper-plus.net/#pro)**
+Learn more about the **[PRO Version](https://dapper-plus.net/#pro)**
 
 ## Contribute
 The best way to contribute is by **spreading the word** about the library:
@@ -212,20 +212,20 @@ A **HUGE THANKS** for your help.
 ## More Projects
 
 **Entity Framework**
-- [EntityFramework Extensions](http://entityframework-extensions.net/)
-- [EntityFramework Plus](http://entityframework-plus.net)
+- [EntityFramework Extensions](https://entityframework-extensions.net/)
+- [EntityFramework Plus](https://entityframework-plus.net)
 
 **Bulk Operations**
-- [Bulk Operations](http://bulk-operations.net/)
-- [Dapper Plus](http://dapper-plus.net/)
+- [Bulk Operations](https://bulk-operations.net/)
+- [Dapper Plus](https://dapper-plus.net/)
 
 **Expression Evaluator**
-- [Eval-SQL.NET](http://eval-sql.net/)
-- [Eval-Expression.NET](http://eval-expression.net/)
+- [Eval-SQL.NET](https://eval-sql.net/)
+- [Eval-Expression.NET](https://eval-expression.net/)
 
 **Utilities**
 - [Extension Methods Library](https://github.com/zzzprojects/Z.ExtensionMethods/)
-- [Html Agility Pack](http://html-agility-pack.net/)
+- [Html Agility Pack](https://html-agility-pack.net/)
 
 **Need more info?** info@zzzprojects.com
 
