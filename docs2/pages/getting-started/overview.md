@@ -4,7 +4,7 @@
 
 **Dapper Plus** is a library that dramatically improves dapper performances by using high efficient Bulk Actions Helpers (Insert, Update, Delete, and Merge).
 
-People using this library often report performance enhancement by 50x times and more!
+People using this library often report performance enhancement by **50x times** and more!
 
 The library is installed through <a href="/download">NuGet</a>. Extension methods are added automatically to your IDbConnection interface.
 
