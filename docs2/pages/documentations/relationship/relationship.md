@@ -11,7 +11,7 @@ connection.BulkInsert(lefts)
 ```
 
 
-In this article, you will learn how to handle this kind of relation:
+In this tutorial, you will learn how to handle this kind of relation:
 - [Foreign Key Property](#foreign-key-property)
 - [Navigation Property](#navigation-property)
 
