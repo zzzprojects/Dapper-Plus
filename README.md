@@ -29,8 +29,8 @@ _* PRO Version unlocked for the current month_
 
 Stay updated with latest changes
 
-<a href="https://twitter.com/zzzprojects" target="_blank"><img src="http://www.zzzprojects.com/images/twitter_follow.png" alt="Twitter Follow" height="24" /></a>
-<a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="http://www.zzzprojects.com/images/facebook_like.png" alt="Facebook Like" height="24" /></a>
+<a href="https://twitter.com/zzzprojects" target="_blank"><img src="https://blog.twitter.com/content/dam/blog-twitter/archive/taking_flight_twitterbird95.thumb.1280.1280.png" alt="Twitter Follow" height="24" /></a>
+<a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="https://en.facebookbrand.com/wp-content/uploads/2016/05/thumb_icon_header_image_05_2018.png" alt="Facebook Like" height="24" /></a>
 
 ## Wiki
 [Introduction][dapper_plus_introduction]
