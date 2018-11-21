@@ -71,4 +71,4 @@ Another way to check if your license is valid is simply adding an invalid licens
 
 The following error should be raised:
 
-***ERROR_001: The provided license key is invalid or trial period is expired. Please buy a product license or go to <a href="http://www.zzzprojects.com" target="_blank">http://www.zzzprojects.com</a> and download the latest trial version. License Count: 1***
+> ERROR_001: The provided license key is invalid or trial period is expired. Please buy a product license or go to <a href="http://www.zzzprojects.com" target="_blank">http://www.zzzprojects.com</a> and download the latest trial version. License Count: 1
