@@ -12,7 +12,7 @@ connection.BulkInsert(lefts)
           .ThenBulkInsert(left => left.Rights);
 ```
 
-In this article, you will learn how to handle this kind of relation:
+In this tutorial, you will learn how to handle this kind of relation:
 
  - Foreign Key Property
  - Navigation Property
