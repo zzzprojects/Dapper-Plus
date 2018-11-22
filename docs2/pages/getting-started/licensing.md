@@ -52,14 +52,14 @@ The validate method allow you to know whether your license is valid or not.
 
 
 ```csharp
-// CHECK if the license if valid for the default provider (SQL Server)
+// CHECK if the license is valid for the default provider (SQL Server)
 string licenseErrorMessage;
 if (!Z.Dapper.Plus.DapperPlusManager.ValidateLicense(out licenseErrorMessage))
 {
     throw new Exception(licenseErrorMessage);
 }
 
-// CHECK if the license if valid for a specific provider
+// CHECK if the license is valid for a specific provider
 string licenseErrorMessage;
 if (!Z.Dapper.Plus.DapperPlusManager.ValidateLicense(out licenseErrorMessage, DapperProviderType.SqlServer))
 {
@@ -71,4 +71,4 @@ Another way to check if your license is valid is simply adding an invalid licens
 
 The following error should be raised:
 
-***ERROR_001: The provided license key is invalid or trial period is expired. Please buy a product license or go to <a href="http://www.zzzprojects.com" target="_blank">http://www.zzzprojects.com</a> and download the latest trial version. License Count: 1***
+> ERROR_001: The provided license key is invalid or trial period is expired. Please buy a product license or go to <a href="http://www.zzzprojects.com" target="_blank">http://www.zzzprojects.com</a> and download the latest trial version. License Count: 1
