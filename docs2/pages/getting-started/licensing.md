@@ -4,12 +4,16 @@
 - You can evaluate the library for several months before purchasing it.
 - The latest version always contains a trial that expires at the **end of the month**. 
 - You can extend your trial for several months by downloading the latest version at the start of every month.
-- If you want to use the library for personal use or educational purpose, it's possible by downloading the latest version once per month.
 
 ## How can I purchase the library?
 - You can purchase the library [here](http://dapper-plus.net/pricing)
 - Upon purchase, you will receive an email with a license name and a license key.
 - Make sure to check your **SPAM** folder if you don't receive the license within 24h.
+
+## How can I get a free license for a personal or academic purpose?
+We don't offer free licenses.
+
+However, you can benefit from all the prime features for personal or academic projects for free by downloading the trial at the beginning of every month.
 
 ## Setup License from config file
 The license name and key can be added directly in the app.config or web.config file in the appSettings section.
