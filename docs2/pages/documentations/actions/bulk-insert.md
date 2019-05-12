@@ -1,6 +1,6 @@
 # Bulk Insert
 
-## Definition
+## Description
 
 The Dapper Plus `BulkInsert` extension method let you insert a large number of entities in your database.
 
@@ -9,9 +9,10 @@ The Dapper Plus `BulkInsert` extension method let you insert a large number of e
 connection.BulkInsert(orders);
 
 // Easy to customize
-connection.UseBulkOptions(options => options.BatchSize = 100)
-          .BulkInsert("TheMappingKey", listB);
+connection.UseBulkOptions(options => options.InsertIfNotExists = true)
+		  .BulkInsert(orders);
 ```
+[Try it](https://dotnetfiddle.net/ltIqrC)
 
 ### Performance Comparison
 
