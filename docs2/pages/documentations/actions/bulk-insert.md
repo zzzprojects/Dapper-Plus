@@ -10,7 +10,7 @@ connection.BulkInsert(orders);
 
 // Easy to customize
 connection.UseBulkOptions(options => options.InsertIfNotExists = true)
-		  .BulkInsert(orders);
+          .BulkInsert(orders);
 ```
 [Try it](https://dotnetfiddle.net/ltIqrC)
 
