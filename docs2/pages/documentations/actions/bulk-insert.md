@@ -2,7 +2,27 @@
 
 ## Definition
 
-The Dapper Plus BulkInsert method allow to INSERT entities in a database table or a view.
+The Dapper Plus `BulkInsert` extension method let you insert a large number of entities in your database.
+
+```csharp
+// Easy to use
+connection.BulkInsert(orders);
+
+// Easy to customize
+connection.UseBulkOptions(options => options.BatchSize = 100)
+          .BulkInsert("TheMappingKey", listB);
+```
+
+### Performance Comparison
+
+| Operations      | 1,000 Entities | 2,000 Entities | 5,000 Entities |
+| :-------------- | -------------: | -------------: | -------------: |
+| SaveChanges     | 1,200 ms       | 2,400 ms       | 6,000 ms       |
+| BulkInsert      | 50 ms          | 55 ms          | 75 ms          |
+
+[Try this benchmark online](https://dotnetfiddle.net/pSpD10)
+
+> HINT: A lot of factors might affect the benchmark time such as index, column type, latency, throttling, etc.
 
 ## Bulk Insert Entity
 
