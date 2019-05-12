@@ -18,7 +18,7 @@ connection.UseBulkOptions(options => options.InsertIfNotExists = true)
 
 | Operations      | 1,000 Entities | 2,000 Entities | 5,000 Entities |
 | :-------------- | -------------: | -------------: | -------------: |
-| SaveChanges     | 1,200 ms       | 2,400 ms       | 6,000 ms       |
+| Execute (Many)  | 1,200 ms       | 2,400 ms       | 6,000 ms       |
 | BulkInsert      | 50 ms          | 55 ms          | 75 ms          |
 
 [Try this benchmark online](https://dotnetfiddle.net/pSpD10)
