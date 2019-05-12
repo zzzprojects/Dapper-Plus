@@ -21,7 +21,7 @@ connection.UseBulkOptions(options => options.InsertIfNotExists = true)
 | Execute (Many)  | 1,200 ms       | 2,400 ms       | 6,000 ms       |
 | BulkInsert      | 50 ms          | 55 ms          | 75 ms          |
 
-[Try this benchmark online](https://dotnetfiddle.net/pSpD10)
+[Try this benchmark online](https://dotnetfiddle.net/CqTwfr)
 
 > HINT: A lot of factors might affect the benchmark time such as index, column type, latency, throttling, etc.
 
