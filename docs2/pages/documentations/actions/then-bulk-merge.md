@@ -4,7 +4,7 @@
 
 The Dapper Plus ThenBulkMerge method allows to MERGE entities in a database table or a view using a lambda expression.
 
-The lambda expression use the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
+The lambda expression uses the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
 
 ## Then Bulk Merge with "One to One" Relation
 
