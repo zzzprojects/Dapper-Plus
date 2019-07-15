@@ -2,7 +2,7 @@
 
 ## Definition
 
-Dapper Plus Mapper method allow configuring transient options.
+Dapper Plus Mapper method allows configuring transient options.
 
 | Name	   | Description |
 | :--------| :-----------|
