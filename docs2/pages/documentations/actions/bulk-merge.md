@@ -3,11 +3,11 @@
 
 ## Definition
 
-The Dapper Plus BulkMerge method allow to MERGE entities in a database table or a view.
+The Dapper Plus BulkMerge method allows to MERGE entities in a database table or a view.
 
 ## Bulk Merge Entity
 
-The Dapper Plus BulkMerge method allow merging a single or multiple entities of the same type.
+The Dapper Plus BulkMerge method allows merging a single or multiple entities of the same type.
 
 
 ```csharp
@@ -21,7 +21,7 @@ connection.BulkMerge(order1, order2, order3);
 
 ## Bulk Merge IEnumerable<TEntity>
 
-The Dapper Plus BulkMerge method allow merging a single enumerable or multiple enumerable of entities of the same type.
+The Dapper Plus BulkMerge method allows merging a single enumerable or multiple enumerable of entities of the same type.
 
 
 ```csharp
@@ -35,7 +35,7 @@ connection.BulkMerge(orders1, orders2, orders3);
 
 ## Bulk Merge with "One to One" Relation
 
-The Dapper Plus BulkMerge method allow merging a related item with a "One to One" relation.
+The Dapper Plus BulkMerge method allows merging a related item with a "One to One" relation.
 
 
 ```csharp
@@ -49,7 +49,7 @@ connection.BulkMerge(orders, order => order.Invoice);
 
 ## Bulk Merge with "One to Many" Relation
 
-The Dapper Plus BulkMerge method allow merging related items with a "One to Many" relation.
+The Dapper Plus BulkMerge method allows merging related items with a "One to Many" relation.
 
 
 ```csharp
@@ -63,7 +63,7 @@ connection.BulkMerge(orders, order => order.Items);
 
 ## Bulk Merge with "Mixed" Relation
 
-The Dapper Plus BulkMerge method allow merging related item(s) with any relation.
+The Dapper Plus BulkMerge method allows merging related item(s) with any relation.
 
 
 ```csharp
@@ -77,7 +77,7 @@ connection.BulkMerge(orders, order => order.Items, order => order.Invoice);
 
 ## Bulk Merge Chain Action
 
-The Dapper Plus BulkMerge method allow chaining multiple bulk action methods.
+The Dapper Plus BulkMerge method allows chaining multiple bulk action methods.
 
 
 ```csharp
