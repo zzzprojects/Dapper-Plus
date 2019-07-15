@@ -43,7 +43,7 @@ Contact us directly:
 - If your question is not suited for the Issue Tracker
 - If your message contains private information
 
-## I think you forget about my request! What should I do?
+## I think you forgot about my request! What should I do?
 Just contact us back again, and we will make sure we don't miss it again!
 </div>
 </div>
