@@ -2,7 +2,7 @@
 
 ## Include Actions
 
-The Dapper Plus Include method allow resolving issues with multiple "ThenBulk[Action]" method.
+The Dapper Plus Include method allows resolving issues with multiple "ThenBulk[Action]" method.
 
 ### Example
 
