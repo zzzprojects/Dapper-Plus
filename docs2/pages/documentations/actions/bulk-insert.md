@@ -2,7 +2,7 @@
 
 ## Description
 
-The Dapper Plus `BulkInsert` extension method let you insert a large number of entities in your database.
+The Dapper Plus `BulkInsert` extension method lets you insert a large number of entities in your database.
 
 ```csharp
 // Easy to use
@@ -27,7 +27,7 @@ connection.UseBulkOptions(options => options.InsertIfNotExists = true)
 
 ## Bulk Insert Entity
 
-The Dapper Plus BulkInsert method allow inserting a single or multiple entities of the same type.
+The Dapper Plus BulkInsert method allows inserting a single or multiple entities of the same type.
 
 
 ```csharp
@@ -41,7 +41,7 @@ connection.BulkInsert(order1, order2, order3);
 
 ## Bulk Insert IEnumerable<TEntity>
 
-The Dapper Plus BulkInsert method allow inserting a single enumerable or multiple enumerable of entities of the same type.
+The Dapper Plus BulkInsert method allows inserting a single enumerable or multiple enumerable of entities of the same type.
 
 
 ```csharp
@@ -55,7 +55,7 @@ connection.BulkInsert(orders1, orders2, orders3);
 
 ## Bulk Insert with "One to One" Relation
 
-The Dapper Plus BulkInsert method allow inserting a related item with a "One to One" relation.
+The Dapper Plus BulkInsert method allows inserting a related item with a "One to One" relation.
 
 
 ```csharp
@@ -83,7 +83,7 @@ connection.BulkInsert(orders, order => order.Items);
 
 ## Bulk Insert with "Mixed" Relation
 
-The Dapper Plus BulkInsert method allow inserting related item(s) with any relation.
+The Dapper Plus BulkInsert method allows inserting related item(s) with any relation.
 
 
 ```csharp
@@ -97,7 +97,7 @@ connection.BulkInsert(orders, order => order.Items, order => order.Invoice);
 
 ## Bulk Insert Chain Action
 
-The Dapper Plus BulkInsert method allow chaining multiple bulk action methods.
+The Dapper Plus BulkInsert method allows chaining multiple bulk action methods.
 
 
 ```csharp
