@@ -61,7 +61,7 @@ However, this mission cannot be successful without being able to pay our develop
 - [NuGet Must Haves](http://nugetmusthaves.com/){:target="_blank"}
 - [Dapper Tutorial](http://dapper-tutorial.net/){:target="_blank"}
 
-By contributing on paid libraries, you are also helping in keeping other libraries and website FREE.
+By contributing on paid libraries, you are also helping in keeping other libraries and websites FREE.
 
 </div>
 </div>
