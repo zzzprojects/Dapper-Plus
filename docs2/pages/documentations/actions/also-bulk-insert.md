@@ -2,13 +2,13 @@
 
 ## Definition
 
-The Dapper Plus AlsoBulkInsert method allow to INSERT entities in a database table or a view using a lambda expression.
+The Dapper Plus AlsoBulkInsert method allow to INSERTs entities in a database table or a view using a lambda expression.
 
-The lambda expression use the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
+The lambda expression uses the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
 
 ## Also Bulk Insert with "One to One" Relation
 
-The Dapper Plus AlsoBulkInsert method allow inserting a related item with a "One to One" relation.
+The Dapper Plus AlsoBulkInsert method allows inserting a related item with a "One to One" relation.
 
 
 ```csharp
@@ -24,7 +24,7 @@ connection.BulkInsert(orders)
 
 ## Also Bulk Insert with "One to Many" Relation
 
-The Dapper Plus AlsoBulkInsert method allow inserting related items with a "One to Many" relation.
+The Dapper Plus AlsoBulkInsert method allows inserting related items with a "One to Many" relation.
 
 
 ```csharp
@@ -39,7 +39,7 @@ connection.BulkInsert(orders);
 
 ## Also Bulk Insert and Mixed Relation
 
-The Dapper Plus AlsoBulkInsert method allow inserting related item(s) with any relation.
+The Dapper Plus AlsoBulkInsert method allows inserting related item(s) with any relation.
 
 
 ```csharp
@@ -55,7 +55,7 @@ connection.BulkInsert(orders)
 
 ## Also Bulk Insert Chain Action
 
-The Dapper Plus AlsoBulkInsert method allow chaining multiple bulk action methods.
+The Dapper Plus AlsoBulkInsert method allows chaining multiple bulk action methods.
 
 
 ```csharp
