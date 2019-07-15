@@ -1,7 +1,7 @@
 # Dapper Plus - Actions
 
 ## Bulk Actions
-The Dapper Plus Bulk[Action] method allow to [Action] entities in a database table or a view
+The Dapper Plus Bulk[Action] method allows to [Action] entities in a database table or a view
 
  - [Bulk Insert](/bulk-insert)
  - [Bulk Update](/bulk-update)
@@ -19,7 +19,7 @@ connection.BulkInsert(orders, order => order.Items)
 
 ## Also Bulk Actions
 
-The Dapper Plus AlsoBulk[Action] method allow to [Action] entities in a database table or a view using a lambda expression.
+The Dapper Plus AlsoBulk[Action] method allows to [Action] entities in a database table or a view using a lambda expression.
 
 The lambda expression use the entity or the IEnumerable from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
 
@@ -38,7 +38,7 @@ connection.BulkInsert(orders)
 
 ## Then Bulk Actions
 
-The Dapper Plus ThenBulk[Action] method allow to [Action] entities in a database table or a view using a lambda expression.
+The Dapper Plus ThenBulk[Action] method allows to [Action] entities in a database table or a view using a lambda expression.
 
 The lambda expression use the entity or the IEnumerable from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
 
@@ -57,7 +57,7 @@ connection.BulkInsert(orderTransaction)
 
 ## Include Actions
 
-The Dapper Plus Include method allow resolving issues with multiple "ThenBulk[Action]" method.
+The Dapper Plus Include method allows resolving issues with multiple "ThenBulk[Action]" method.
 
  - [Include Actions](/include-actions)
 
