@@ -41,7 +41,7 @@ Download the <a href="/download">NuGet Package</a>
 
 ## Mapper
 
-**Dapper Plus Mapper** allow to map the conceptual model (Entity) with the storage model (Database) and configure options to perform Bulk Actions.
+**Dapper Plus Mapper** allows to map the conceptual model (Entity) with the storage model (Database) and configure options to perform Bulk Actions.
 
 ### Mapper Examples
 
@@ -53,7 +53,7 @@ DapperPlusManager.Entity<Order>().Table("Orders")
 
 ## Bulk Actions
 
-**Bulk Actions** allow to perform a bulk insert, update, delete or merge and include related child items.
+**Bulk Actions** allows to perform a bulk insert, update, delete or merge and include related child items.
 
 Bulk Actions Available:
 
@@ -81,7 +81,7 @@ connection.BulkInsert(orders, order => order.Items)
 
 ## Also Bulk Actions
 
-**Also Bulk Actions** allow to perform bulk action with a lambda expression using entities from the last Bulk[Action] or ThenBulk[Action] used.
+**Also Bulk Actions** allows to perform bulk action with a lambda expression using entities from the last Bulk[Action] or ThenBulk[Action] used.
 
 ### Also Bulk Actions Examples
 ```csharp
@@ -105,7 +105,7 @@ connection.BulkInsert(orders)
 
 ## Include Actions
 
-The Dapper Plus **Include** method allow resolving issues with multiple "ThenBulk[Action]" method.
+The Dapper Plus **Include** method allows resolving issues with multiple "ThenBulk[Action]" method.
 
 ### Include Actions Examples
 ```csharp
