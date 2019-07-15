@@ -2,13 +2,13 @@
 
 ## Definition
 
-The Dapper Plus ThenBulkUpdate method allow to UPDATE entities in a database table or a view using a lambda expression.
+The Dapper Plus ThenBulkUpdate method allows to UPDATE entities in a database table or a view using a lambda expression.
 
 The lambda expression use the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
 
 ## Then Bulk Update with "One to One" Relation
 
-The Dapper Plus ThenBulkUpdate method allow updating a related item with a "One to One" relation.
+The Dapper Plus ThenBulkUpdate method allows updating a related item with a "One to One" relation.
 
 
 ```csharp
@@ -26,7 +26,7 @@ connection.BulkUpdate(orderTransaction)
 
 ## Then Bulk Update with "One to Many" Relation
 
-The Dapper Plus ThenBulkUpdate method allow updating related items with a "One to Many" relation.
+The Dapper Plus ThenBulkUpdate method allows updating related items with a "One to Many" relation.
 
 
 ```csharp
@@ -44,7 +44,7 @@ connection.BulkUpdate(orderTransaction)
 
 ## Then Bulk Update Chaining
 
-The Dapper Plus ThenBulkUpdate method allow chaining multiple bulk action methods.
+The Dapper Plus ThenBulkUpdate method allows chaining multiple bulk action methods.
 
 
 ```csharp
