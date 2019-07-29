@@ -2,7 +2,7 @@
 
 ## Definition
 
-Dapper Plus Mapper allow configuring temporary table options.
+Dapper Plus Mapper allows configuring temporary table options.
 
 | Name	   | Description |
 | :--------| :-----------|

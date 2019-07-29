@@ -2,13 +2,13 @@
 
 ## Definition
 
-The Dapper Plus AlsoBulkDelete method allow to DELETE entities in a database table or a view using a lambda expression.
+The Dapper Plus AlsoBulkDelete method allows to DELETE entities in a database table or a view using a lambda expression.
 
-The lambda expression use the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
+The lambda expression uses the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
 
 ## Also Bulk Delete with "One to One" Relation
 
-The Dapper Plus AlsoBulkDelete method allow deleting a related item with a "One to One" relation.
+The Dapper Plus AlsoBulkDelete method allows deleting a related item with a "One to One" relation.
 
 
 ```csharp
@@ -24,7 +24,7 @@ connection.BulkDelete(orders)
 
 ## Also Bulk Delete with "One to Many" Relation
 
-The Dapper Plus AlsoBulkDelete method allow deleting related items with a "One to Many" relation.
+The Dapper Plus AlsoBulkDelete method allows deleting related items with a "One to Many" relation.
 
 
 ```csharp
@@ -40,7 +40,7 @@ connection.BulkDelete(orders);
 
 ## Also Bulk Delete and Mixed Relation
 
-The Dapper Plus AlsoBulkDelete method allow deleting related item(s) with any relation.
+The Dapper Plus AlsoBulkDelete method allows deleting related item(s) with any relation.
 
 
 ```csharp
@@ -57,7 +57,7 @@ connection.BulkDelete(orders)
 
 ## Also Bulk Delete Chain Action
 
-The Dapper Plus AlsoBulkDelete method allow chaining multiple bulk action methods.
+The Dapper Plus AlsoBulkDelete method allows chaining multiple bulk action methods.
 
 
 ```csharp

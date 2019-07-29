@@ -2,13 +2,13 @@
 
 ## Definition
 
-The Dapper Plus AlsoBulkMerge method allow to MERGE entities in a database table or a view using a lambda expression.
+The Dapper Plus AlsoBulkMerge method allows to MERGE entities in a database table or a view using a lambda expression.
 
-The lambda expression use the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
+The lambda expression uses the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
 
 ## Also Bulk Merge with "One to One" Relation
 
-The Dapper Plus AlsoBulkMerge method allow merging a related item with a "One to One" relation.
+The Dapper Plus AlsoBulkMerge method allows merging a related item with a "One to One" relation.
 
 
 ```csharp
@@ -24,7 +24,7 @@ connection.BulkMerge(orders)
 
 ## Also Bulk Merge with "One to Many" Relation
 
-The Dapper Plus AlsoBulkMerge method allow merging related items with a "One to Many" relation.
+The Dapper Plus AlsoBulkMerge method allows merging related items with a "One to Many" relation.
 
 
 ```csharp
@@ -40,7 +40,7 @@ connection.BulkMerge(orders);
 
 ## Also Bulk Merge and Mixed Relation
 
-The Dapper Plus AlsoBulkMerge method allow merging related item(s) with any relation.
+The Dapper Plus AlsoBulkMerge method allows merging related item(s) with any relation.
 
 
 ```csharp
@@ -56,7 +56,7 @@ connection.BulkMerge(orders)
 
 ## Also Bulk Merge Chain Action
 
-The Dapper Plus AlsoBulkMerge method allow chaining multiple bulk action methods.
+The Dapper Plus AlsoBulkMerge method allows chaining multiple bulk action methods.
 
 
 ```csharp
