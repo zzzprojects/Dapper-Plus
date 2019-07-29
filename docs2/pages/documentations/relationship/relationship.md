@@ -1,6 +1,6 @@
 # Relationship
 
-In our example, you often see us chaining multiples action without specifying the relation parent/child even when the parent use an auto-generated identity value.
+In our examples, you often see us chaining multiple actions without specifying the relation parent/child even when the parent use an auto-generated identity value.
 
 
 ```csharp
@@ -84,7 +84,7 @@ connection.BulkInsert(lefts)
 ```
 
 ## Navigation Property
-A navigation property happen when the child has a reference to the parent.
+A navigation property happens when the child has a reference to the parent.
 
 ### Example
 
