@@ -51,7 +51,7 @@ DapperPlusManager.AddLicense(licenseName, licenseKey);
 
 ```
 
-**ENSURE** to always test the license the first time you setup it
+**ENSURE** to always test the license the first time you set it up.
 
 ### Recommendations
 - Use the config file to store your license name and license key.
@@ -63,7 +63,7 @@ DapperPlusManager.AddLicense(licenseName, licenseKey);
 
 ## How can I check if my license is valid?
 
-The validate method allow you to know whether your license is valid or not.
+The validate method allows you to know whether your license is valid or not.
 
 
 ```csharp
