@@ -105,29 +105,29 @@
 ---
 ## FAQ
 
-### Which payment alternative method are accepted?
+### Which alternative payment methods are accepted?
 We accept `PayPal`, `Cheque` and `Wire Transfer`.
 
-We **DO NOT** accept bitcoin  and credit card.
+We **DO NOT** accept bitcoin and credit card.
 
 Please contact us for more information.
 
 Email: <a href="mailto:sales@zzzprojects.com">sales@zzzprojects.com</a>
 
 ### Do you accept reseller?
-Yes contact us if you are a reseller or seeking for a reseller.
+Yes, contact us if you are a reseller or seeking for a reseller.
 
 Email: <a href="mailto:sales@zzzprojects.com">sales@zzzprojects.com</a>
 
 ### What `2-4` developer seats mean?
-It mean that you can use the license with up 4 developers inside your team.
+It means that you can use the license for up 4 developers in your team.
 
 The `5-9` developer seats mean you can use the license with up 9 developers.
 
 You only pay for developer seats. You can use our library with an unlimited amount of application, environment, server, and client machine.
 
 ### I need more than `19 seats`, what can I do?
-Please contact us with the number of seats required. We offer some additional great discount or enterprise license.
+Please contact us with the number of seats required. We offer some additional great discounts or enterprise license.
 
 Email: <a href="mailto:sales@zzzprojects.com">sales@zzzprojects.com</a>
 

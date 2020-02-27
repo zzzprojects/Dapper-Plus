@@ -4,12 +4,12 @@
 
 The Dapper Plus AlsoBulkUpdate method allow to UPDATE entities in a database table or a view using a lambda expression.
 
-The lambda expression use the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
+The lambda expression uses the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
 
 
 ## Also Bulk Update with "One to One" Relation
 
-The Dapper Plus AlsoBulkUpdate method allow updating a related item with a "One to One" relation.
+The Dapper Plus AlsoBulkUpdate method allows updating a related item with a "One to One" relation.
 
 
 ```csharp
@@ -26,7 +26,7 @@ connection.BulkUpdate(orders)
 
 ## Also Bulk Update with "One to Many" Relation
 
-The Dapper Plus AlsoBulkUpdate method allow updating related items with a "One to Many" relation.
+The Dapper Plus AlsoBulkUpdate method allows updating related items with a "One to Many" relation.
 
 
 ```csharp
@@ -42,7 +42,7 @@ connection.BulkUpdate(orders);
 
 ## Also Bulk Update and Mixed Relation
 
-The Dapper Plus AlsoBulkUpdate method allow updating related item(s) with any relation.
+The Dapper Plus AlsoBulkUpdate method allows updating related item(s) with any relation.
 
 
 ```csharp
@@ -59,7 +59,7 @@ connection.BulkUpdate(orders)
 
 ## Also Bulk Update Chain Action
 
-The Dapper Plus AlsoBulkUpdate method allow chaining multiple bulk action methods.
+The Dapper Plus AlsoBulkUpdate method allows chaining multiple bulk action methods.
 
 
 ```csharp

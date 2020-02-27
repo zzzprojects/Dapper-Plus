@@ -2,13 +2,13 @@
 
 ## Definition
 
-The Dapper Plus ThenBulkMerge method allow to MERGE entities in a database table or a view using a lambda expression.
+The Dapper Plus ThenBulkMerge method allows to MERGE entities in a database table or a view using a lambda expression.
 
-The lambda expression use the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
+The lambda expression uses the entity or the IEnumerable<TEntity> from the last Bulk[Action] or ThenBulk[Action] chained method. (The action can be an insert, update, delete or merge operation).
 
 ## Then Bulk Merge with "One to One" Relation
 
-The Dapper Plus ThenBulkMerge method allow merging a related item with a "One to One" relation.
+The Dapper Plus ThenBulkMerge method allows merging a related item with a "One to One" relation.
 
 
 ```csharp
@@ -26,7 +26,7 @@ connection.BulkMerge(orderTransaction)
 
 ## Then Bulk Merge with "One to Many" Relation
 
-The Dapper Plus ThenBulkMerge method allow merging related items with a "One to Many" relation.
+The Dapper Plus ThenBulkMerge method allows merging related items with a "One to Many" relation.
 
 
 ```csharp
@@ -44,7 +44,7 @@ connection.BulkMerge(orderTransaction)
 
 ## Then Bulk Merge Chaining
 
-The Dapper Plus ThenBulkMerge method allow chaining multiple bulk action methods.
+The Dapper Plus ThenBulkMerge method allows chaining multiple bulk action methods.
 
 
 ```csharp

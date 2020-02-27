@@ -18,12 +18,23 @@ However, you can benefit from all the prime features for personal or academic pr
 ## Setup License from config file
 The license name and key can be added directly in the app.config or web.config file in the appSettings section.
 
-
 ```csharp
 <appSettings>
 	<add key="Z_Dapper_Plus_LicenseName" value="[licenseName]"/>
 	<add key="Z_Dapper_Plus_LicenseKey" value="[licenseKey]"/>
 </appSettings>
+```
+
+## Setup License from appsettings.json file (.NET Core)
+The license name and key can be added directly in the appsettings.json.
+
+```csharp
+{
+  "Z.Dapper.Plus": {
+    "LicenseName": "[licenseName]",
+    "LicenseKey": "[licenseKey]"
+  }
+}
 ```
 
 ## Setup License from code
@@ -40,7 +51,7 @@ DapperPlusManager.AddLicense(licenseName, licenseKey);
 
 ```
 
-**ENSURE** to always test the license the first time you setup it
+**ENSURE** to always test the license the first time you set it up.
 
 ### Recommendations
 - Use the config file to store your license name and license key.
@@ -52,7 +63,7 @@ DapperPlusManager.AddLicense(licenseName, licenseKey);
 
 ## How can I check if my license is valid?
 
-The validate method allow you to know whether your license is valid or not.
+The validate method allows you to know whether your license is valid or not.
 
 
 ```csharp

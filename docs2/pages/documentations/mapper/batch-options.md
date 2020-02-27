@@ -2,7 +2,7 @@
 
 ## Definition
 
-Dapper Plus Mapper allow configuring batch options.
+Dapper Plus Mapper allows configuring batch options.
 
 | Name	   | Description |
 | :--------| :-----------|
