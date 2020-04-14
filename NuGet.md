@@ -18,4 +18,4 @@ DapperPlusManager.Entity<InvoiceItem>().Identity(x => x.InvoiceItemID, true);
 connection.BulkInsert(invoices, x => x.InvoiceMeta, x => x.InvoiceItems);
 ```
 
-- Try it: [https://dotnetfiddle.net/LBfItU](https://dotnetfiddle.net/LBfItU)
+Try it: [https://dotnetfiddle.net/LBfItU](https://dotnetfiddle.net/LBfItU)
