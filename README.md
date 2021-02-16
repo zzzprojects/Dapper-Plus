@@ -1,3 +1,5 @@
+# What's Dapper Plus?
+
 Like [Dapper](https://github.com/StackExchange/dapper-dot-net), 
 
 **Dapper Plus** is a [NuGet library](https://www.nuget.org/packages/Z.Dapper.Plus/) that you can add to your project that will extend your `IDbConnection` and `IDbTransaction` interface with high efficient Bulk Actions Helpers (Insert, Update, Delete, and Merge).
