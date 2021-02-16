@@ -4,7 +4,7 @@ Like [Dapper](https://github.com/StackExchange/dapper-dot-net),
 
 **Dapper Plus** is a [NuGet library](https://www.nuget.org/packages/Z.Dapper.Plus/) that you can add to your project that will extend your `IDbConnection` and `IDbTransaction` interface with high efficient Bulk Actions Helpers (Insert, Update, Delete, and Merge).
 
-It can be used with or without Dapper, and it's compatible with all others Dapper packages.
+It can be used with or without Dapper, and it's compatible with all other Dapper packages.
 
 ### Example
 ```csharp
@@ -74,7 +74,7 @@ Stay updated with latest changes
 [PRO License][dapper_plus_pro_license]
 
 ## Mapper
-Dapper Plus Mapper allow to map the conceptual model (Entity) with the storage model (Database) and configure options to perform Bulk Actions.
+Dapper Plus Mapper allows to map the conceptual model (Entity) with the storage model (Database) and configure options to perform Bulk Actions.
 ```csharp
 DapperPlusManager.Entity<Order>().Table("Orders")
                                  .Identity(x => x.ID)
@@ -129,7 +129,7 @@ transaction.BulkInsert(orders)
 ```
 
 ## DB Provider Supported
-All major database provider are supported or under development.
+All major database providers are supported or under development.
 - SQL Server 2008+
 - SQL Azure
 - SQL Compact
