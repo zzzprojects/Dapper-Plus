@@ -218,8 +218,8 @@ A **HUGE THANKS** for your help.
 - [C# Eval Expression](https://eval-expression.net/)
 - [Entity Framework Classic](https://entityframework-classic.net/)
 - [SQL Eval Function](https://eval-sql.net/)
+- [LINQ To SQL Plus](https://linqtosql-plus.net/)
 - and much more! 
 To view all our free and paid librariries visit our [website](https://zzzprojects.com/).
 
 Contact our outstanding customer support for any request. We usually answer within the next business day, hour, or minutes!
-
