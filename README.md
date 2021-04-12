@@ -1,8 +1,6 @@
 # What's Dapper Plus?
 
-Like [Dapper](https://github.com/StackExchange/dapper-dot-net), 
-
-**Dapper Plus** is a [NuGet library](https://www.nuget.org/packages/Z.Dapper.Plus/) that you can add to your project that will extend your `IDbConnection` and `IDbTransaction` interface with high efficient Bulk Actions Helpers (Insert, Update, Delete, and Merge).
+Like [Dapper](https://github.com/StackExchange/dapper-dot-net), **Dapper Plus** is a [NuGet library](https://www.nuget.org/packages/Z.Dapper.Plus/) where you can add to your project that will extend your `IDbConnection` and `IDbTransaction` interface with high efficient Bulk Actions Helpers (Insert, Update, Delete, and Merge).
 
 It can be used with or without Dapper, and it's compatible with all other Dapper packages.
 
@@ -28,11 +26,6 @@ PM> Install-Package Z.Dapper.Plus
 ```
 
 _* PRO Version unlocked for the current month_
-
-Stay updated with latest changes
-
-<a href="https://twitter.com/zzzprojects" target="_blank"><img src="http://www.zzzprojects.com/images/twitter_follow.png" alt="Twitter Follow" height="24" /></a>
-<a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="http://www.zzzprojects.com/images/facebook_like.png" alt="Facebook Like" height="24" /></a>
 
 ## Wiki
 [Introduction][dapper_plus_introduction]
@@ -98,7 +91,7 @@ connection.BulkInsert(orders)
           .AlsoInsert(order => order.Invoice.Items);
 ```
 ### Then Bulk Actions
-**Then Bulk Actions** is similar to Also Bulk Actions but modify entities used for the next bulk action using a lambda expression.
+**Then Bulk Actions** is similar to Also Bulk Actions but modifies entities used for the next bulk action using a lambda expression.
 
 ```csharp
 connection.BulkInsert(orders)
@@ -108,7 +101,7 @@ connection.BulkInsert(orders)
 ```
 
 ### Include Actions
-The Dapper Plus Include method allow resolving issues with multiple "ThenBulk[Action]" method.
+The Dapper Plus Include method allows resolving issues with multiple "ThenBulk[Action]" methods.
 
 ```csharp
 connection.BulkInsert(orders)
@@ -175,13 +168,6 @@ All major database providers are supported or under development.
 
 [dapper_plus_pro_license]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-pro-license
 
-## Support
-Contact our outstanding customer support for any request. We usually answer within the next business day, hour, or minutes!
-
-- info@zzzprojects.com
-- [Documentation](https://github.com/zzzprojects/Bulk-Operations/wiki)
-- [Issues / Questions](https://github.com/zzzprojects/Bulk-Operations/issues)
-
 ## PRO
 _PRO Version unlocked for the current month_
 
@@ -198,14 +184,13 @@ Commercial License          | Yes
 Royalty-Free                | Yes
 Support & Upgrades (1 year) | Yes
 
-Learn more about the **[PRO Version](https://dapper-plus.net/#pro)**
+Learn more about the **[PRO Version](https://dapper-plus.net/#pro)**.
 
 ## Contribute
 The best way to contribute is by **spreading the word** about the library:
 
  - Blog it
  - Comment it
- - Fork it
  - Star it
  - Share it
  
@@ -213,13 +198,11 @@ A **HUGE THANKS** for your help.
 
 ## More Projects
 
-- [EntityFramework Extensions](https://entityframework-extensions.net/)
+- [Dapper Plus](https://dapper-plus.net/)
 - [Bulk Operations](https://bulk-operations.net/)
 - [C# Eval Expression](https://eval-expression.net/)
-- [Entity Framework Classic](https://entityframework-classic.net/)
-- [SQL Eval Function](https://eval-sql.net/)
-- [LINQ To SQL Plus](https://linqtosql-plus.net/)
-- and much more! 
-To view all our free and paid librariries visit our [website](https://zzzprojects.com/).
+- and much more!
 
-Contact our outstanding customer support for any request. We usually answer within the next business day, hour, or minutes!
+To view all our free and paid projects, visit our [website](https://zzzprojects.com/).
+
+Contact our outstanding **[customer support](https://entityframework-extensions.net/contact-us)** for any request. We usually answer within the next day, hour, or minutes!
