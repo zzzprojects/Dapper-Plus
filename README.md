@@ -187,6 +187,7 @@ Support & Upgrades (1 year) | Yes
 Learn more about the **[PRO Version](https://dapper-plus.net/#pro)**.
 
 ## Contribute
+
 The best way to contribute is by **spreading the word** about the library:
 
  - Blog it
