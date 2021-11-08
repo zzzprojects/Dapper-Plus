@@ -28,43 +28,36 @@ PM> Install-Package Z.Dapper.Plus
 _* PRO Version unlocked for the current month_
 
 ## Wiki
-[Introduction][dapper_plus_introduction]
+[Introduction](https://dapper-plus.net/overview)
 
-**Dapper Plus -  Actions**
-- [Introduction][dapper_plus_actions_introduction]
 - Bulk Actions
-   - [Bulk Insert][dapper_plus_bulk_insert]
-   - [Bulk Update][dapper_plus_bulk_update]
-   - [Bulk Delete][dapper_plus_bulk_delete]
-   - [Bulk Merge][dapper_plus_bulk_merge]
+   - [Bulk Insert](https://dapper-plus.net/bulk-insert)
+   - [Bulk Update](https://dapper-plus.net/bulk-update)
+   - [Bulk Delete](https://dapper-plus.net/bulk-delete)
+   - [Bulk Merge](https://dapper-plus.net/bulk-merge)
 - Also Bulk Actions
-   - [Also Bulk Insert][dapper_plus_also_bulk_insert]
-   - [Also Bulk Update][dapper_plus_also_bulk_update]
-   - [Also Bulk Delete][dapper_plus_also_bulk_delete]
-   - [Also Bulk Merge][dapper_plus_also_bulk_merge]
+   - [Also Bulk Insert](https://dapper-plus.net/also-bulk-insert)
+   - [Also Bulk Update](https://dapper-plus.net/also-bulk-update)
+   - [Also Bulk Delete](https://dapper-plus.net/also-bulk-delete)
+   - [Also Bulk Merge](https://dapper-plus.net/also-bulk-merge)
 - Then Bulk Actions
-   - [Then Bulk Insert][dapper_plus_then_bulk_insert]
-   - [Then Bulk Update][dapper_plus_then_bulk_update]
-   - [Then Bulk Delete][dapper_plus_then_bulk_delete]
-   - [Then Bulk Merge][dapper_plus_then_bulk_merge]
-- [Include Actions][dapper_plus_include_actions]
-- [Transaction][dapper_plus_transaction]
+   - [Then Bulk Insert](https://dapper-plus.net/then-bulk-insert)
+   - [Then Bulk Update](https://dapper-plus.net/then-bulk-update)
+   - [Then Bulk Delete](https://dapper-plus.net/then-bulk-delete)
+   - [Then Bulk Merge](https://dapper-plus.net/then-bulk-merge)
+- [Include Actions](https://dapper-plus.net/include-actions)
+- [Transaction](https://dapper-plus.net/transaction)
 
 **Dapper Plus - Mapper**
-- [Introduction][dapper_plus_mapper_introduction]
-- [Map][dapper_plus_mapper_map]
+- [Map](https://dapper-plus.net/map)
 - Options
-   - [Action][dapper_plus_mapper_action]
-   - [Batch][dapper_plus_mapper_batch]
-   - [SQL Server][dapper_plus_mapper_sql_server]
-   - [Temporary Table][dapper_plus_mapper_temporary_table]
-   - [Transient Error][dapper_plus_mapper_transient_error]
- 
-**Dapper Plus - Manager**
-- [Entity][dapper_plus_manager_entity]
-- [MapperFactory][dapper_plus_manager_mapperfactory]
+   - [Action](https://dapper-plus.net/action-options)
+   - [Batch](https://dapper-plus.net/batch-options)
+   - [SQL Server](https://dapper-plus.net/sql-server-options)
+   - [Temporary Table](https://dapper-plus.net/temporary-table-options)
+   - [Transient Error](https://dapper-plus.net/transient-error-options)
 
-[PRO License][dapper_plus_pro_license]
+[PRO License](https://dapper-plus.net/licensing)
 
 ## Mapper
 Dapper Plus Mapper allows to map the conceptual model (Entity) with the storage model (Database) and configure options to perform Bulk Actions.
@@ -130,43 +123,6 @@ All major database providers are supported or under development.
 - MySQL
 - PostgreSQL
 - Oracle
-
-[dapper_plus_introduction]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-introduction
-
-[dapper_plus_actions_introduction]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-actions-introduction
-
-[dapper_plus_bulk_insert]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-bulk-insert
-[dapper_plus_bulk_update]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-bulk-update
-[dapper_plus_bulk_delete]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-bulk-delete
-[dapper_plus_bulk_merge]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-bulk-merge
-
-[dapper_plus_also_bulk_insert]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-also-bulk-insert
-[dapper_plus_also_bulk_update]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-also-bulk-update
-[dapper_plus_also_bulk_delete]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-also-bulk-delete
-[dapper_plus_also_bulk_merge]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-also-bulk-merge
-
-[dapper_plus_then_bulk_insert]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-then-bulk-insert
-[dapper_plus_then_bulk_update]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-then-bulk-update
-[dapper_plus_then_bulk_delete]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-then-bulk-delete
-[dapper_plus_then_bulk_merge]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-then-bulk-merge
-
-[dapper_plus_include_actions]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-include-actions
-
-[dapper_plus_transaction]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-transaction
-
-[dapper_plus_mapper_introduction]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-introduction
-[dapper_plus_mapper_map]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-map
-
-[dapper_plus_mapper_action]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-action
-[dapper_plus_mapper_batch]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-batch
-[dapper_plus_mapper_sql_server]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-sql-server
-[dapper_plus_mapper_temporary_table]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-temporary-table
-[dapper_plus_mapper_transient_error]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-mapper-transient-error
-
-[dapper_plus_manager_entity]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-manager-entity
-[dapper_plus_manager_mapperfactory]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-manager-mapper-factory
-
-[dapper_plus_pro_license]:https://github.com/zzzprojects/Dapper-Plus/wiki/dapper-plus-pro-license
 
 ## PRO
 _PRO Version unlocked for the current month_
