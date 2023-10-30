@@ -24,6 +24,7 @@ Otherwise, make sure to include as much information as possible to help our team
 _Note: More information you provide, faster we can implement a solution._
 
 ### Further technical details
-- Dapper version:
-- Dapper Plus version:
-- Database Provider:
+- Dapper version: [Dapper v2.1.15]
+- Dapper Plus version: [Dapper Plus v6.0.5]
+- Database Server version: [SQL Server 2002]
+- Database Provider version (NuGet): [Microsoft.Data.SqlClient v5.1.2]
