@@ -26,7 +26,7 @@ namespace Z.Dapper.Plus
         /// <param name="actionKind">The action kind.</param>
         /// <param name="selectors">A variable-length parameters list containing selectors.</param>
         /// <returns>The new dapper action.</returns>
-        public DapperPlusActionSet<T2> CreateDapperAction<T1, T2>(string mapperKey, DapperPlusActionKind actionKind, params Func<T1, T2>[] selectors)
+        public DapperPlusActionSet<T2> CreateDapperAction<T1, T2>(string mapperKey, DapperPlusActionKind actionKind, string entityName = null, params Func<T1, T2>[] selectors)
         {
             // FROM: Extensions.AlsoBulKAction
 
@@ -37,12 +37,12 @@ namespace Z.Dapper.Plus
             if (Current != null)
             {
                 var childs = selectors.Select(x => ((IEnumerable<T1>) Current).Select(x).ToList()).ToList();
-                AddAction(mapperKey, actionKind, childs);
+                AddAction(mapperKey, actionKind, childs, entityName);
             }
             else if (CurrentItem != null)
             {
                 var childs = selectors.Select(x => ((IEnumerable<T1>) CurrentItem).Select(x).ToList()).ToList();
-                AddAction(mapperKey, actionKind, childs);
+                AddAction(mapperKey, actionKind, childs, entityName);
             }
 
             return action;
@@ -54,7 +54,7 @@ namespace Z.Dapper.Plus
         /// <param name="actionKind">The action kind.</param>
         /// <param name="selectors">A variable-length parameters list containing selectors.</param>
         /// <returns>The new dapper action.</returns>
-        public DapperPlusActionSet<T2> CreateDapperAction<T2>(string mapperKey, DapperPlusActionKind actionKind, params Func<TEntity, T2>[] selectors)
+        public DapperPlusActionSet<T2> CreateDapperAction<T2>(string mapperKey, DapperPlusActionKind actionKind, string entityName = null, params Func<TEntity, T2>[] selectors)
         {
             // FROM: ThenBulkAction
 
@@ -65,12 +65,12 @@ namespace Z.Dapper.Plus
             if (Current != null)
             {
                 var childs = selectors.Select(x => Current.Select(x).ToList()).ToList();
-                action.AddAction(mapperKey, actionKind, childs);
+                action.AddAction(mapperKey, actionKind, childs, entityName);
             }
             else if (CurrentItem != null)
             {
                 var childs = selectors.Select(x => x(CurrentItem)).ToList();
-                action.AddAction(mapperKey, actionKind, childs);
+                action.AddAction(mapperKey, actionKind, childs, entityName);
             }
 
             return action;

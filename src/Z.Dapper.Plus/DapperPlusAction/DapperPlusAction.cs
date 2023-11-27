@@ -9,12 +9,17 @@ namespace Z.Dapper.Plus
         /// <param name="key">The key.</param>
         /// <param name="kind">The kind.</param>
         /// <param name="dataSource">The data source.</param>
-        public DapperPlusAction(BaseDapperPlusActionSet action, string key, DapperPlusActionKind kind, object dataSource)
+        public DapperPlusAction(BaseDapperPlusActionSet action, string key, DapperPlusActionKind kind, object dataSource, string entityName = null)
         {
             Key = key;
             Connection = action.Connection;
             DataSource = dataSource;
             Kind = kind;
+
+            if (!string.IsNullOrWhiteSpace(entityName))
+            {
+                Config.Table(entityName);
+            }
 
             Execute();
         }

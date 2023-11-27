@@ -24,7 +24,7 @@ namespace Z.Dapper.Plus
         /// <param name="mapperKey">The mapper key.</param>
         /// <param name="actionKind">The action kind.</param>
         /// <param name="items">The items.</param>
-        public DapperPlusActionSet(IDbConnection connection, string mapperKey, DapperPlusActionKind actionKind, IEnumerable<TEntity> items)
+        public DapperPlusActionSet(IDbConnection connection, string mapperKey, DapperPlusActionKind actionKind, IEnumerable<TEntity> items, string entityName = null)
         {
             // FROM: cn.BulkAction<T>(params T[] items)
 
@@ -33,7 +33,7 @@ namespace Z.Dapper.Plus
             if (items == null) return;
 
             Current = items.ToList();
-            AddAction(mapperKey, actionKind, Current);
+            AddAction(mapperKey, actionKind, Current, entityName);
         }
 
         /// <summary>Constructor.</summary>
@@ -42,7 +42,8 @@ namespace Z.Dapper.Plus
         /// <param name="actionKind">The action kind.</param>
         /// <param name="item">The item.</param>
         /// <param name="selectors">A variable-length parameters list containing selectors.</param>
-        public DapperPlusActionSet(IDbConnection connection, string mapperKey, DapperPlusActionKind actionKind, TEntity item, params Func<TEntity, object>[] selectors)
+        public DapperPlusActionSet(IDbConnection connection, string mapperKey, DapperPlusActionKind actionKind, TEntity item, string entityName = null, 
+            params Func<TEntity, object>[] selectors)
         {
             // FROM: cn.BulkAction<T>(T item, selectors)
 
@@ -56,7 +57,7 @@ namespace Z.Dapper.Plus
             if (selectors == null) return;
 
             var childs = selectors.Select(x => x(CurrentItem)).ToList();
-            AddAction(mapperKey, actionKind, childs);
+            AddAction(mapperKey, actionKind, childs, entityName);
         }
 
         /// <summary>Constructor.</summary>
@@ -65,7 +66,8 @@ namespace Z.Dapper.Plus
         /// <param name="actionKind">The action kind.</param>
         /// <param name="items">The items.</param>
         /// <param name="selectors">A variable-length parameters list containing selectors.</param>
-        public DapperPlusActionSet(IDbConnection connection, string mapperKey, DapperPlusActionKind actionKind, IEnumerable<TEntity> items, params Func<TEntity, object>[] selectors)
+        public DapperPlusActionSet(IDbConnection connection, string mapperKey, DapperPlusActionKind actionKind, IEnumerable<TEntity> items, string entityName = null,
+            params Func<TEntity, object>[] selectors)
         {
             // FROM: cn.BulkAction<T>(IEnumerable<T> items, selectors)
 
@@ -74,12 +76,12 @@ namespace Z.Dapper.Plus
             if (items == null) return;
 
             Current = items.ToList();
-            AddAction(mapperKey, actionKind, Current);
+            AddAction(mapperKey, actionKind, Current, entityName);
 
             if (selectors == null) return;
 
             var childs = selectors.Select(x => Current.Select(x).ToList()).ToList();
-            AddAction(mapperKey, actionKind, childs);
+            AddAction(mapperKey, actionKind, childs, entityName);
         }
 
         /// <summary>Constructor.</summary>

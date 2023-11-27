@@ -11,7 +11,7 @@ namespace Z.Dapper.Plus
         /// <param name="mapperKey">The mapper key.</param>
         /// <param name="actionKind">The action kind.</param>
         /// <param name="selectors">The selection of entities to perform the action kind on.</param>
-        public void AddAction<T>(string mapperKey, DapperPlusActionKind actionKind, params Func<T, object>[] selectors)
+        public void AddAction<T>(string mapperKey, DapperPlusActionKind actionKind, string entityName = null, params Func<T, object>[] selectors)
         {
             // FROM: Extensions.AlsoBulKAction
 
@@ -20,12 +20,12 @@ namespace Z.Dapper.Plus
             if (Current != null)
             {
                 var childs = selectors.Select(x => ((IEnumerable<T>) Current).Select(x).ToList()).ToList();
-                AddAction(mapperKey, actionKind, childs);
+                AddAction(mapperKey, actionKind, childs, entityName);
             }
             else if (CurrentItem != null)
             {
                 var childs = selectors.Select(x => ((IEnumerable<T>) CurrentItem).Select(x).ToList()).ToList();
-                AddAction(mapperKey, actionKind, childs);
+                AddAction(mapperKey, actionKind, childs, entityName);
             }
         }
 
@@ -33,7 +33,7 @@ namespace Z.Dapper.Plus
         /// <param name="mapperKey">The mapper key.</param>
         /// <param name="actionKind">The action kind.</param>
         /// <param name="selectors">The selection of entities to perform the action kind on.</param>
-        public void AddAction(string mapperKey, DapperPlusActionKind actionKind, params Func<TEntity, object>[] selectors)
+        public void AddAction(string mapperKey, DapperPlusActionKind actionKind, string entityName = null, params Func<TEntity, object>[] selectors)
         {
             // FROM: AlsoBulkAction
 
@@ -42,12 +42,12 @@ namespace Z.Dapper.Plus
             if (Current != null)
             {
                 var childs = selectors.Select(x => Current.Select(x).ToList()).ToList();
-                AddAction(mapperKey, actionKind, childs);
+                AddAction(mapperKey, actionKind, childs, entityName);
             }
             else if (CurrentItem != null)
             {
                 var childs = selectors.Select(x => x(CurrentItem)).ToList();
-                AddAction(mapperKey, actionKind, childs);
+                AddAction(mapperKey, actionKind, childs, entityName);
             }
         }
 
@@ -55,40 +55,40 @@ namespace Z.Dapper.Plus
         /// <param name="mapperKey">The mapper key.</param>
         /// <param name="actionKind">The action kind.</param>
         /// <param name="item">The item to perform the action kind on.</param>
-        public void AddAction(string mapperKey, DapperPlusActionKind actionKind, IEnumerable<TEntity> item)
+        public void AddAction(string mapperKey, DapperPlusActionKind actionKind, IEnumerable<TEntity> item, string entityName = null)
         {
             // FROM: Constructor
             // FROM: CreateDapperAction
 
             if (item == null) return;
 
-            Actions.Add(new DapperPlusAction(this, mapperKey, actionKind, item));
+            Actions.Add(new DapperPlusAction(this, mapperKey, actionKind, item, entityName));
         }
 
         /// <summary>Adds an action to the actionSet.</summary>
         /// <param name="mapperKey">The mapper key.</param>
         /// <param name="actionKind">The action kind.</param>
         /// <param name="item">The item to perform the action kind on.</param>
-        public void AddAction(string mapperKey, DapperPlusActionKind actionKind, TEntity item)
+        public void AddAction(string mapperKey, DapperPlusActionKind actionKind, TEntity item, string entityName = null)
         {
             // FROM: Constructor
 
             if (item == null) return;
 
-            Actions.Add(new DapperPlusAction(this, mapperKey, actionKind, item));
+            Actions.Add(new DapperPlusAction(this, mapperKey, actionKind, item, entityName));
         }
 
         /// <summary>Adds an action to the actionSet.</summary>
         /// <param name="mapperKey">The mapper key.</param>
         /// <param name="actionKind">The action kind.</param>
         /// <param name="childs">The childs to perform the action kind on.</param>
-        public void AddAction(string mapperKey, DapperPlusActionKind actionKind, IEnumerable<object> childs)
+        public void AddAction(string mapperKey, DapperPlusActionKind actionKind, IEnumerable<object> childs, string entityName = null)
         {
             if (childs == null) return;
 
             childs.Where(x => x != null)
                 .ToList()
-                .ForEach(x => Actions.Add(new DapperPlusAction(this, mapperKey, actionKind, x)));
+                .ForEach(x => Actions.Add(new DapperPlusAction(this, mapperKey, actionKind, x, entityName)));
         }
     }
 }
