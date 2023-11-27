@@ -9,3 +9,4 @@ Z.Lab/
 _ReSharper.*
 *.ReSharper.user
 *.resharper.user 
+/src/.vs/Z.Dapper.Plus/FileContentIndex
