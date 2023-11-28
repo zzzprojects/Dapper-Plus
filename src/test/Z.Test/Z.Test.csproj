@@ -42,9 +42,8 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
-    <Reference Include="Z.Dapper.Plus, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\OneDrive\Documents\Release\Z.Dapper.Plus\NET45\Z.Dapper.Plus.dll</HintPath>
+    <Reference Include="Z.Dapper.Plus, Version=7.0.0.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Z.Dapper.Plus.7.0.0\lib\net45\Z.Dapper.Plus.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
@@ -1125,6 +1124,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Choose>

@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Dapper.Plus", "Z.Dapper.Plus\Z.Dapper.Plus.csproj", "{13E580C8-6E58-4CA0-933B-4ACB1E8D0593}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Dapper.Plus.NET40", "Z.Dapper.Plus.NET40\Z.Dapper.Plus.NET40.csproj", "{DCB2A0F8-0619-4C45-870F-FA2676FBB9B5}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{84908C69-D5B3-4615-9D28-E65B7FD64FBD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Test", "test\Z.Test\Z.Test.csproj", "{FB0FA303-3C92-4047-8960-79A660E34975}"
