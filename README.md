@@ -155,11 +155,17 @@ A **HUGE THANKS** for your help.
 
 ## More Projects
 
-- [Entity Framework Extensions](https://entityframework-extensions.net/)
-- [Bulk Operations](https://bulk-operations.net/)
-- [C# Eval Expression](https://eval-expression.net/)
+- Projects:
+   - [EntityFramework Extensions](https://entityframework-extensions.net/)
+   - [Dapper Plus](https://dapper-plus.net/)
+   - [C# Eval Expression](https://eval-expression.net/)
+- Learn Websites
+   - [Learn EF Core](https://www.learnentityframeworkcore.com/)
+   - [Learn Dapper](https://www.learndapper.com/)
+- Online Tools:
+   - [.NET Fiddle](https://dotnetfiddle.net/)
+   - [SQL Fiddle](https://sqlfiddle.com/)
+   - [ZZZ Code AI](https://zzzcode.ai/)
 - and much more!
 
-To view all our free and paid projects, visit our [website](https://zzzprojects.com/).
-
-Contact our outstanding **[customer support](https://dapper-plus.net/contact-us)** for any request. We usually answer within the next day, hour, or minutes!
+To view all our free and paid projects, visit our website [ZZZ Projects](https://zzzprojects.com/).
