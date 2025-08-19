@@ -6,6 +6,9 @@ It can be used with or without Dapper, and it's compatible with all other Dapper
 
 ### Example
 ```csharp
+// @nuget: Z.Dapper.Plus
+using Z.Dapper.Plus;
+
 // CONFIGURE & MAP entity
 DapperPlusManager.Entity<Order>().Table("Orders").Identity(x => x.ID);
 
@@ -62,6 +65,9 @@ _* PRO Version unlocked for the current month_
 ## Mapper
 Dapper Plus Mapper allows to map the conceptual model (Entity) with the storage model (Database) and configure options to perform Bulk Actions.
 ```csharp
+// @nuget: Z.Dapper.Plus
+using Z.Dapper.Plus;
+
 DapperPlusManager.Entity<Order>().Table("Orders")
                                  .Identity(x => x.ID)
                                  .BatchSize(200);
@@ -70,6 +76,9 @@ DapperPlusManager.Entity<Order>().Table("Orders")
 ## Bulk Actions
 **Bulk Actions** allow to perform a bulk insert, update, delete or merge and include related child items.
 ```csharp
+// @nuget: Z.Dapper.Plus
+using Z.Dapper.Plus;
+
 connection.BulkInsert(orders, order => order.Items)
           .BulkInsert(invoices, invoice => invoice.Items)
           .BulkMerge(shippingAddresses);
@@ -78,6 +87,9 @@ connection.BulkInsert(orders, order => order.Items)
 **Also Bulk Actions** allow to perform bulk action with a lambda expression using entities from the last Bulk[Action] or ThenBulk[Action] used.
 
 ```csharp
+// @nuget: Z.Dapper.Plus
+using Z.Dapper.Plus;
+
 connection.BulkInsert(orders)
           .AlsoInsert(order => order.Items)
           .AlsoInsert(order => order.Invoice)
@@ -87,6 +99,9 @@ connection.BulkInsert(orders)
 **Then Bulk Actions** is similar to Also Bulk Actions but modifies entities used for the next bulk action using a lambda expression.
 
 ```csharp
+// @nuget: Z.Dapper.Plus
+using Z.Dapper.Plus;
+
 connection.BulkInsert(orders)
           .AlsoInsert(order => order.Items)
           .ThenInsert(order => order.Invoice)
@@ -97,6 +112,9 @@ connection.BulkInsert(orders)
 The Dapper Plus Include method allows resolving issues with multiple "ThenBulk[Action]" methods.
 
 ```csharp
+// @nuget: Z.Dapper.Plus
+using Z.Dapper.Plus;
+
 connection.BulkInsert(orders)
           .Include(x => x.ThenInsert(order => order.Items)
                          .ThenInsert(orderItem => orderItem.Metas))
@@ -107,6 +125,9 @@ connection.BulkInsert(orders)
 ### Transaction
 All Dapper Plus extension methods are also available on the `IDbTransaction` interface
 ```csharp
+// @nuget: Z.Dapper.Plus
+using Z.Dapper.Plus;
+
 transaction.BulkInsert(orders)
           .Include(x => x.ThenInsert(order => order.Items)
                          .ThenInsert(orderItem => orderItem.Metas))
