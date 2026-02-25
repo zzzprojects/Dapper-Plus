@@ -21,8 +21,8 @@ connection.BulkInsert(orders)
 ```
 
 ## Download
-<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/dapper-plus-v.svg" alt="download" /></a>
-<a href="https://www.nuget.org/packages/Z.Dapper.Plus/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/dapper-plus-d.svg" alt="" /></a>
+[![nuget](https://img.shields.io/nuget/v/Z.Dapper.Plus?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.Dapper.Plus)
+[![nuget](https://img.shields.io/nuget/dt/Z.Dapper.Plus?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.Dapper.Plus)
 
 ```
 PM> Install-Package Z.Dapper.Plus
